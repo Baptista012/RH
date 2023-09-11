@@ -1,0 +1,13 @@
+D:\Códigos\RHSolutions\RHSolutions\bin\Debug\RHSolutions.exe.config
+D:\Códigos\RHSolutions\RHSolutions\bin\Debug\RHSolutions.exe
+D:\Códigos\RHSolutions\RHSolutions\bin\Debug\RHSolutions.pdb
+D:\Códigos\RHSolutions\RHSolutions\obj\Debug\RHSolutions.csproj.AssemblyReference.cache
+D:\Códigos\RHSolutions\RHSolutions\obj\Debug\RHSolutions.Form1.resources
+D:\Códigos\RHSolutions\RHSolutions\obj\Debug\RHSolutions.Form2.resources
+D:\Códigos\RHSolutions\RHSolutions\obj\Debug\RHSolutions.Properties.Resources.resources
+D:\Códigos\RHSolutions\RHSolutions\obj\Debug\RHSolutions.csproj.GenerateResource.cache
+D:\Códigos\RHSolutions\RHSolutions\obj\Debug\RHSolutions.csproj.CoreCompileInputs.cache
+D:\Códigos\RHSolutions\RHSolutions\obj\Debug\RHSolutions.exe
+D:\Códigos\RHSolutions\RHSolutions\obj\Debug\RHSolutions.pdb
+D:\Códigos\RHSolutions\RHSolutions\obj\Debug\RHSolutions.Form3.resources
+D:\Códigos\RHSolutions\RHSolutions\obj\Debug\RHSolutions.Form4.resources
