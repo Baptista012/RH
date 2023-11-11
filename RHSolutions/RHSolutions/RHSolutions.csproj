@@ -46,43 +46,92 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Controladores\CadastroEmpresa.cs" />
+    <Compile Include="Controladores\CadastroFuncio.cs" />
+    <Compile Include="Controladores\LoginControl.cs" />
+    <Compile Include="Controladores\PagamentoControl.cs" />
+    <Compile Include="Controladores\PontoControl.cs" />
+    <Compile Include="Data\EmpresaData.cs" />
+    <Compile Include="Data\FuncionarioData.cs" />
+    <Compile Include="Data\funcionarioData_.cs" />
+    <Compile Include="Data\LoginData.cs" />
+    <Compile Include="Data\PontoData.cs" />
+    <Compile Include="Data\ResidenciaData.cs" />
+    <Compile Include="Data\Usuario.cs" />
+    <Compile Include="Interfaces\homePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Interfaces\homePage.Designer.cs">
+      <DependentUpon>homePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="InterfacesFunc\telaFerias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="InterfacesFunc\telaFerias.Designer.cs">
+      <DependentUpon>telaFerias.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="Interfaces\telaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Interfaces\telaLogin.Designer.cs">
+      <DependentUpon>telaLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="InterfacesFunc\telaCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="InterfacesFunc\telaCadastro.Designer.cs">
+      <DependentUpon>telaCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\telaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\telaMenu.Designer.cs">
+      <DependentUpon>telaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfacesFunc\telaPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfacesFunc\telaPagamento.Designer.cs">
+      <DependentUpon>telaPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfacesFunc\telaPonto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfacesFunc\telaPonto.Designer.cs">
+      <DependentUpon>telaPonto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="RHDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RHDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RHSOLUTIONSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RHSOLUTIONSDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="InterfacesFunc\telaPonto.resx">
+      <DependentUpon>telaPonto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Interfaces\homePage.resx">
+      <DependentUpon>homePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="InterfacesFunc\telaFerias.resx">
+      <DependentUpon>telaFerias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="Interfaces\telaLogin.resx">
+      <DependentUpon>telaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfacesFunc\telaCadastro.resx">
+      <DependentUpon>telaCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\telaMenu.resx">
+      <DependentUpon>telaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfacesFunc\telaPagamento.resx">
+      <DependentUpon>telaPagamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,9 +151,32 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="RHDBDataSet.xsc">
+      <DependentUpon>RHDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RHDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RHDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RHDBDataSet.xss">
+      <DependentUpon>RHDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RHSOLUTIONSDataSet.xsc">
+      <DependentUpon>RHSOLUTIONSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RHSOLUTIONSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RHSOLUTIONSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RHSOLUTIONSDataSet.xss">
+      <DependentUpon>RHSOLUTIONSDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
