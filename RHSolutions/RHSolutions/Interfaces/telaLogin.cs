@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using RHSolutions.Interfaces;
 using RHSolutions.Data;
+using RHSolutions.Controladores;
 
 namespace RHSolutions
 {
@@ -27,10 +28,8 @@ namespace RHSolutions
             LoginData loginModel = new LoginData();
             loginModel.Funcional = TxtFuncional.Text;
             loginModel.Senha = TxtSenha.Text;
-           
-
-            var conexaoSql = @"Data Source=LOCALHOST;Initial Catalog=RHSOLUTIONS;Integrated Security=True";
-            SqlConnection conexaoDB = new SqlConnection(conexaoSql);
+                
+            SqlConnection conexaoDB = new SqlConnection(SQLConect.conexaoSql);
 
             conexaoDB.Open();
             try
@@ -59,24 +58,19 @@ namespace RHSolutions
                 }
                 else
                 {
+
                     loginModel.Funcional = reader.GetString(0);
-                   
+                    this.Close();
+                    Form4 Menu = new Form4();
+                    Menu.ShowDialog();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro: " + ex.Message);
             }
-            this.Close();
-            Form4 Menu = new Form4();
-            Menu.ShowDialog();
-            
-
-
-
-
+                            
         }
-
 
     }
 }

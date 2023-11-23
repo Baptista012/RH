@@ -29,13 +29,8 @@ namespace RHSolutions.Interfaces
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SalarioFunc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.MtxtCpf = new System.Windows.Forms.MaskedTextBox();
+            this.buscarCPF = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,57 +41,10 @@ namespace RHSolutions.Interfaces
             this.button2 = new System.Windows.Forms.Button();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cpfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefoneFuncDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cargoFuncDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salarioFuncDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fUNCIONARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rhdbDataSet1 = new RHSolutions.RHDBDataSet();
-            this.fUNCIONARIOTableAdapter = new RHSolutions.RHDBDataSetTableAdapters.FUNCIONARIOTableAdapter();
             this.PesquisarBt = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rhdbDataSet1)).BeginInit();
+            this.GridFerias = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.GridFerias)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Nome,
-            this.cpfDataGridViewTextBoxColumn,
-            this.nomeDataGridViewTextBoxColumn,
-            this.telefoneFuncDataGridViewTextBoxColumn,
-            this.cargoFuncDataGridViewTextBoxColumn,
-            this.SalarioFunc,
-            this.salarioFuncDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.fUNCIONARIOBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 163);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(845, 142);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Cpf";
-            this.Column1.HeaderText = "Cpf";
-            this.Column1.Name = "Column1";
-            // 
-            // Nome
-            // 
-            this.Nome.DataPropertyName = "Nome";
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            // 
-            // SalarioFunc
-            // 
-            this.SalarioFunc.DataPropertyName = "SalarioFunc";
-            this.SalarioFunc.HeaderText = "Tempo restante";
-            this.SalarioFunc.Name = "SalarioFunc";
             // 
             // label1
             // 
@@ -107,13 +55,13 @@ namespace RHSolutions.Interfaces
             this.label1.TabIndex = 1;
             this.label1.Text = "Digite o Cpf do funcionário :";
             // 
-            // MtxtCpf
+            // buscarCPF
             // 
-            this.MtxtCpf.Location = new System.Drawing.Point(184, 98);
-            this.MtxtCpf.Mask = "000.000.000-00";
-            this.MtxtCpf.Name = "MtxtCpf";
-            this.MtxtCpf.Size = new System.Drawing.Size(206, 20);
-            this.MtxtCpf.TabIndex = 2;
+            this.buscarCPF.Location = new System.Drawing.Point(184, 98);
+            this.buscarCPF.Mask = "000.000.000-00";
+            this.buscarCPF.Name = "buscarCPF";
+            this.buscarCPF.Size = new System.Drawing.Size(206, 20);
+            this.buscarCPF.TabIndex = 2;
             // 
             // label2
             // 
@@ -191,7 +139,7 @@ namespace RHSolutions.Interfaces
             "1°",
             "2°",
             "3°"});
-            this.checkedListBox1.Location = new System.Drawing.Point(419, 329);
+            this.checkedListBox1.Location = new System.Drawing.Point(421, 329);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(309, 49);
             this.checkedListBox1.TabIndex = 11;
@@ -205,50 +153,6 @@ namespace RHSolutions.Interfaces
             this.label5.TabIndex = 12;
             this.label5.Text = "Divisão em periodos :";
             // 
-            // cpfDataGridViewTextBoxColumn
-            // 
-            this.cpfDataGridViewTextBoxColumn.DataPropertyName = "Cpf";
-            this.cpfDataGridViewTextBoxColumn.HeaderText = "Primeiro Periodo";
-            this.cpfDataGridViewTextBoxColumn.Name = "cpfDataGridViewTextBoxColumn";
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Segundo Periodo";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            // 
-            // telefoneFuncDataGridViewTextBoxColumn
-            // 
-            this.telefoneFuncDataGridViewTextBoxColumn.DataPropertyName = "TelefoneFunc";
-            this.telefoneFuncDataGridViewTextBoxColumn.HeaderText = "Terceiro Periodo";
-            this.telefoneFuncDataGridViewTextBoxColumn.Name = "telefoneFuncDataGridViewTextBoxColumn";
-            // 
-            // cargoFuncDataGridViewTextBoxColumn
-            // 
-            this.cargoFuncDataGridViewTextBoxColumn.DataPropertyName = "CargoFunc";
-            this.cargoFuncDataGridViewTextBoxColumn.HeaderText = "Periodos";
-            this.cargoFuncDataGridViewTextBoxColumn.Name = "cargoFuncDataGridViewTextBoxColumn";
-            // 
-            // salarioFuncDataGridViewTextBoxColumn
-            // 
-            this.salarioFuncDataGridViewTextBoxColumn.DataPropertyName = "SalarioFunc";
-            this.salarioFuncDataGridViewTextBoxColumn.HeaderText = "Data limite";
-            this.salarioFuncDataGridViewTextBoxColumn.Name = "salarioFuncDataGridViewTextBoxColumn";
-            // 
-            // fUNCIONARIOBindingSource
-            // 
-            this.fUNCIONARIOBindingSource.DataMember = "FUNCIONARIO";
-            this.fUNCIONARIOBindingSource.DataSource = this.rhdbDataSet1;
-            // 
-            // rhdbDataSet1
-            // 
-            this.rhdbDataSet1.DataSetName = "RHDBDataSet";
-            this.rhdbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // fUNCIONARIOTableAdapter
-            // 
-            this.fUNCIONARIOTableAdapter.ClearBeforeFill = true;
-            // 
             // PesquisarBt
             // 
             this.PesquisarBt.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -259,12 +163,22 @@ namespace RHSolutions.Interfaces
             this.PesquisarBt.TabIndex = 13;
             this.PesquisarBt.Text = "Pesquisar";
             this.PesquisarBt.UseVisualStyleBackColor = false;
+            this.PesquisarBt.Click += new System.EventHandler(this.PesquisarBt_Click);
+            // 
+            // GridFerias
+            // 
+            this.GridFerias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridFerias.Location = new System.Drawing.Point(52, 153);
+            this.GridFerias.Name = "GridFerias";
+            this.GridFerias.Size = new System.Drawing.Size(738, 107);
+            this.GridFerias.TabIndex = 14;
             // 
             // telaFerias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.GridFerias);
             this.Controls.Add(this.PesquisarBt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.checkedListBox1);
@@ -276,28 +190,20 @@ namespace RHSolutions.Interfaces
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.MtxtCpf);
+            this.Controls.Add(this.buscarCPF);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "telaFerias";
             this.Text = "telaFerias";
             this.Load += new System.EventHandler(this.telaFerias_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rhdbDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridFerias)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private RHDBDataSet rhdbDataSet1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource fUNCIONARIOBindingSource;
-        private RHDBDataSetTableAdapters.FUNCIONARIOTableAdapter fUNCIONARIOTableAdapter;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox MtxtCpf;
+        private System.Windows.Forms.MaskedTextBox buscarCPF;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -306,16 +212,9 @@ namespace RHSolutions.Interfaces
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cpfDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telefoneFuncDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cargoFuncDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SalarioFunc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn salarioFuncDataGridViewTextBoxColumn;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button PesquisarBt;
+        private System.Windows.Forms.DataGridView GridFerias;
     }
 }

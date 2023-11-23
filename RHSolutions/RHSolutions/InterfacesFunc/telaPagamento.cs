@@ -31,16 +31,17 @@ namespace RHSolutions.Interfaces
 
         private void telaPagamento_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'rHSOLUTIONSDataSet.ENDERECOFUNC'. Você pode movê-la ou removê-la conforme necessário.
-            this.eNDERECOFUNCTableAdapter.Fill(this.rHSOLUTIONSDataSet.ENDERECOFUNC);
-            // TODO: esta linha de código carrega dados na tabela 'rHSOLUTIONSDataSet.EMPRESA'. Você pode movê-la ou removê-la conforme necessário.
-            this.eMPRESATableAdapter.Fill(this.rHSOLUTIONSDataSet.EMPRESA);
             // TODO: esta linha de código carrega dados na tabela 'rHSOLUTIONSDataSet.FUNCIONARIO'. Você pode movê-la ou removê-la conforme necessário.
             this.fUNCIONARIOTableAdapter.Fill(this.rHSOLUTIONSDataSet.FUNCIONARIO);
 
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void EmpPagaBT_Click(object sender, EventArgs e)
         {
 
         }

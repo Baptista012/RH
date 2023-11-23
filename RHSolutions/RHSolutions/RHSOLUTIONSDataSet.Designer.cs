@@ -34,13 +34,13 @@ namespace RHSolutions {
         
         private PONTODataTable tablePONTO;
         
-        private global::System.Data.DataRelation relationFK__EMPRESA__CpfFunc__44FF419A;
+        private global::System.Data.DataRelation relationFK__EMPRESA__CpfFunc__3C69FB99;
         
-        private global::System.Data.DataRelation relationFK__ENDERECOFUN__Cpf__48CFD27E;
+        private global::System.Data.DataRelation relationFK__ENDERECOFUN__Cpf__3E52440B;
         
-        private global::System.Data.DataRelation relationFK__FERIAS__Cpf__46E78A0C;
+        private global::System.Data.DataRelation relationFK__FERIAS__Cpf__38996AB5;
         
-        private global::System.Data.DataRelation relationFK__PONTO__Cpf__4316F928;
+        private global::System.Data.DataRelation relationFK__PONTO__Cpf__3A81B327;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -298,10 +298,10 @@ namespace RHSolutions {
                     this.tablePONTO.InitVars();
                 }
             }
-            this.relationFK__EMPRESA__CpfFunc__44FF419A = this.Relations["FK__EMPRESA__CpfFunc__44FF419A"];
-            this.relationFK__ENDERECOFUN__Cpf__48CFD27E = this.Relations["FK__ENDERECOFUN__Cpf__48CFD27E"];
-            this.relationFK__FERIAS__Cpf__46E78A0C = this.Relations["FK__FERIAS__Cpf__46E78A0C"];
-            this.relationFK__PONTO__Cpf__4316F928 = this.Relations["FK__PONTO__Cpf__4316F928"];
+            this.relationFK__EMPRESA__CpfFunc__3C69FB99 = this.Relations["FK__EMPRESA__CpfFunc__3C69FB99"];
+            this.relationFK__ENDERECOFUN__Cpf__3E52440B = this.Relations["FK__ENDERECOFUN__Cpf__3E52440B"];
+            this.relationFK__FERIAS__Cpf__38996AB5 = this.Relations["FK__FERIAS__Cpf__38996AB5"];
+            this.relationFK__PONTO__Cpf__3A81B327 = this.Relations["FK__PONTO__Cpf__3A81B327"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -322,22 +322,22 @@ namespace RHSolutions {
             base.Tables.Add(this.tableFUNCIONARIO);
             this.tablePONTO = new PONTODataTable();
             base.Tables.Add(this.tablePONTO);
-            this.relationFK__EMPRESA__CpfFunc__44FF419A = new global::System.Data.DataRelation("FK__EMPRESA__CpfFunc__44FF419A", new global::System.Data.DataColumn[] {
+            this.relationFK__EMPRESA__CpfFunc__3C69FB99 = new global::System.Data.DataRelation("FK__EMPRESA__CpfFunc__3C69FB99", new global::System.Data.DataColumn[] {
                         this.tableFUNCIONARIO.CpfColumn}, new global::System.Data.DataColumn[] {
                         this.tableEMPRESA.CpfFuncionarioColumn}, false);
-            this.Relations.Add(this.relationFK__EMPRESA__CpfFunc__44FF419A);
-            this.relationFK__ENDERECOFUN__Cpf__48CFD27E = new global::System.Data.DataRelation("FK__ENDERECOFUN__Cpf__48CFD27E", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__EMPRESA__CpfFunc__3C69FB99);
+            this.relationFK__ENDERECOFUN__Cpf__3E52440B = new global::System.Data.DataRelation("FK__ENDERECOFUN__Cpf__3E52440B", new global::System.Data.DataColumn[] {
                         this.tableFUNCIONARIO.CpfColumn}, new global::System.Data.DataColumn[] {
                         this.tableENDERECOFUNC.CpfColumn}, false);
-            this.Relations.Add(this.relationFK__ENDERECOFUN__Cpf__48CFD27E);
-            this.relationFK__FERIAS__Cpf__46E78A0C = new global::System.Data.DataRelation("FK__FERIAS__Cpf__46E78A0C", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__ENDERECOFUN__Cpf__3E52440B);
+            this.relationFK__FERIAS__Cpf__38996AB5 = new global::System.Data.DataRelation("FK__FERIAS__Cpf__38996AB5", new global::System.Data.DataColumn[] {
                         this.tableFUNCIONARIO.CpfColumn}, new global::System.Data.DataColumn[] {
                         this.tableFERIAS.CpfColumn}, false);
-            this.Relations.Add(this.relationFK__FERIAS__Cpf__46E78A0C);
-            this.relationFK__PONTO__Cpf__4316F928 = new global::System.Data.DataRelation("FK__PONTO__Cpf__4316F928", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__FERIAS__Cpf__38996AB5);
+            this.relationFK__PONTO__Cpf__3A81B327 = new global::System.Data.DataRelation("FK__PONTO__Cpf__3A81B327", new global::System.Data.DataColumn[] {
                         this.tableFUNCIONARIO.CpfColumn}, new global::System.Data.DataColumn[] {
                         this.tablePONTO.CpfColumn}, false);
-            this.Relations.Add(this.relationFK__PONTO__Cpf__4316F928);
+            this.Relations.Add(this.relationFK__PONTO__Cpf__3A81B327);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -567,7 +567,7 @@ namespace RHSolutions {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public EMPRESARow AddEMPRESARow(FUNCIONARIORow parentFUNCIONARIORowByFK__EMPRESA__CpfFunc__44FF419A, string NomeEmpresa, string CnpjEmpresa, string EnderEmpresa, string TelefoneEmpresa) {
+            public EMPRESARow AddEMPRESARow(FUNCIONARIORow parentFUNCIONARIORowByFK__EMPRESA__CpfFunc__3C69FB99, string NomeEmpresa, string CnpjEmpresa, string EnderEmpresa, string TelefoneEmpresa) {
                 EMPRESARow rowEMPRESARow = ((EMPRESARow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -575,8 +575,8 @@ namespace RHSolutions {
                         CnpjEmpresa,
                         EnderEmpresa,
                         TelefoneEmpresa};
-                if ((parentFUNCIONARIORowByFK__EMPRESA__CpfFunc__44FF419A != null)) {
-                    columnValuesArray[0] = parentFUNCIONARIORowByFK__EMPRESA__CpfFunc__44FF419A[0];
+                if ((parentFUNCIONARIORowByFK__EMPRESA__CpfFunc__3C69FB99 != null)) {
+                    columnValuesArray[0] = parentFUNCIONARIORowByFK__EMPRESA__CpfFunc__3C69FB99[0];
                 }
                 rowEMPRESARow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEMPRESARow);
@@ -889,7 +889,7 @@ namespace RHSolutions {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public ENDERECOFUNCRow AddENDERECOFUNCRow(string Endereco, int Numero, string Complemento, string Cidade, FUNCIONARIORow parentFUNCIONARIORowByFK__ENDERECOFUN__Cpf__48CFD27E, string Cep) {
+            public ENDERECOFUNCRow AddENDERECOFUNCRow(string Endereco, int Numero, string Complemento, string Cidade, FUNCIONARIORow parentFUNCIONARIORowByFK__ENDERECOFUN__Cpf__3E52440B, string Cep) {
                 ENDERECOFUNCRow rowENDERECOFUNCRow = ((ENDERECOFUNCRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Endereco,
@@ -898,8 +898,8 @@ namespace RHSolutions {
                         Cidade,
                         null,
                         Cep};
-                if ((parentFUNCIONARIORowByFK__ENDERECOFUN__Cpf__48CFD27E != null)) {
-                    columnValuesArray[4] = parentFUNCIONARIORowByFK__ENDERECOFUN__Cpf__48CFD27E[0];
+                if ((parentFUNCIONARIORowByFK__ENDERECOFUN__Cpf__3E52440B != null)) {
+                    columnValuesArray[4] = parentFUNCIONARIORowByFK__ENDERECOFUN__Cpf__3E52440B[0];
                 }
                 rowENDERECOFUNCRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowENDERECOFUNCRow);
@@ -947,13 +947,14 @@ namespace RHSolutions {
                 this.columnCep = new global::System.Data.DataColumn("Cep", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCep);
                 this.columnEndereco.AllowDBNull = false;
-                this.columnEndereco.MaxLength = 150;
+                this.columnEndereco.MaxLength = 2147483647;
+                this.columnNumero.AllowDBNull = false;
                 this.columnComplemento.MaxLength = 150;
-                this.columnCidade.MaxLength = 2147483647;
+                this.columnCidade.AllowDBNull = false;
+                this.columnCidade.MaxLength = 50;
                 this.columnCpf.AllowDBNull = false;
                 this.columnCpf.MaxLength = 15;
-                this.columnCep.AllowDBNull = false;
-                this.columnCep.MaxLength = 10;
+                this.columnCep.MaxLength = 9;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1217,7 +1218,7 @@ namespace RHSolutions {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FERIASRow AddFERIASRow(int QtdDiasPrimeiroPeriodo, int QtdDiasSegundoPeriodo, int QtdDiasTerceiroPeriodo, int QtdPeriodos, FUNCIONARIORow parentFUNCIONARIORowByFK__FERIAS__Cpf__46E78A0C, System.DateTime DataLimiteGozo) {
+            public FERIASRow AddFERIASRow(int QtdDiasPrimeiroPeriodo, int QtdDiasSegundoPeriodo, int QtdDiasTerceiroPeriodo, int QtdPeriodos, FUNCIONARIORow parentFUNCIONARIORowByFK__FERIAS__Cpf__38996AB5, System.DateTime DataLimiteGozo) {
                 FERIASRow rowFERIASRow = ((FERIASRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         QtdDiasPrimeiroPeriodo,
@@ -1226,8 +1227,8 @@ namespace RHSolutions {
                         QtdPeriodos,
                         null,
                         DataLimiteGozo};
-                if ((parentFUNCIONARIORowByFK__FERIAS__Cpf__46E78A0C != null)) {
-                    columnValuesArray[4] = parentFUNCIONARIORowByFK__FERIAS__Cpf__46E78A0C[0];
+                if ((parentFUNCIONARIORowByFK__FERIAS__Cpf__38996AB5 != null)) {
+                    columnValuesArray[4] = parentFUNCIONARIORowByFK__FERIAS__Cpf__38996AB5[0];
                 }
                 rowFERIASRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFERIASRow);
@@ -1276,7 +1277,6 @@ namespace RHSolutions {
                 base.Columns.Add(this.columnDataLimiteGozo);
                 this.columnCpf.AllowDBNull = false;
                 this.columnCpf.MaxLength = 15;
-                this.columnDataLimiteGozo.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1692,13 +1692,13 @@ namespace RHSolutions {
                 this.columnCpf.MaxLength = 15;
                 this.columnNome.AllowDBNull = false;
                 this.columnNome.MaxLength = 150;
-                this.columnTelefoneFunc.AllowDBNull = false;
                 this.columnTelefoneFunc.MaxLength = 11;
                 this.columnCargoFunc.AllowDBNull = false;
                 this.columnCargoFunc.MaxLength = 2147483647;
                 this.columnSalarioFunc.AllowDBNull = false;
                 this.columnFuncional.AllowDBNull = false;
                 this.columnFuncional.MaxLength = 10;
+                this.columnVAuxilioRefeicao.AllowDBNull = false;
                 this.columnSenha.AllowDBNull = false;
                 this.columnSenha.MaxLength = 8;
                 this.columnEmail.AllowDBNull = false;
@@ -1978,7 +1978,7 @@ namespace RHSolutions {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PONTORow AddPONTORow(System.TimeSpan PrimeiraBatida, System.TimeSpan SegundaBatida, System.TimeSpan TerceiraBatida, System.TimeSpan QuartaBatida, System.TimeSpan HorasTrabalhadas, FUNCIONARIORow parentFUNCIONARIORowByFK__PONTO__Cpf__4316F928, System.DateTime Dia) {
+            public PONTORow AddPONTORow(System.TimeSpan PrimeiraBatida, System.TimeSpan SegundaBatida, System.TimeSpan TerceiraBatida, System.TimeSpan QuartaBatida, System.TimeSpan HorasTrabalhadas, FUNCIONARIORow parentFUNCIONARIORowByFK__PONTO__Cpf__3A81B327, System.DateTime Dia) {
                 PONTORow rowPONTORow = ((PONTORow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         PrimeiraBatida,
@@ -1988,8 +1988,8 @@ namespace RHSolutions {
                         HorasTrabalhadas,
                         null,
                         Dia};
-                if ((parentFUNCIONARIORowByFK__PONTO__Cpf__4316F928 != null)) {
-                    columnValuesArray[5] = parentFUNCIONARIORowByFK__PONTO__Cpf__4316F928[0];
+                if ((parentFUNCIONARIORowByFK__PONTO__Cpf__3A81B327 != null)) {
+                    columnValuesArray[5] = parentFUNCIONARIORowByFK__PONTO__Cpf__3A81B327[0];
                 }
                 rowPONTORow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPONTORow);
@@ -2041,7 +2041,6 @@ namespace RHSolutions {
                 base.Columns.Add(this.columnDia);
                 this.columnCpf.AllowDBNull = false;
                 this.columnCpf.MaxLength = 15;
-                this.columnDia.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2261,10 +2260,10 @@ namespace RHSolutions {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public FUNCIONARIORow FUNCIONARIORow {
                 get {
-                    return ((FUNCIONARIORow)(this.GetParentRow(this.Table.ParentRelations["FK__EMPRESA__CpfFunc__44FF419A"])));
+                    return ((FUNCIONARIORow)(this.GetParentRow(this.Table.ParentRelations["FK__EMPRESA__CpfFunc__3C69FB99"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__EMPRESA__CpfFunc__44FF419A"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__EMPRESA__CpfFunc__3C69FB99"]);
                 }
             }
             
@@ -2346,12 +2345,7 @@ namespace RHSolutions {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int Numero {
                 get {
-                    try {
-                        return ((int)(this[this.tableENDERECOFUNC.NumeroColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Numero\' na tabela \'ENDERECOFUNC\' é DBNull.", e);
-                    }
+                    return ((int)(this[this.tableENDERECOFUNC.NumeroColumn]));
                 }
                 set {
                     this[this.tableENDERECOFUNC.NumeroColumn] = value;
@@ -2378,12 +2372,7 @@ namespace RHSolutions {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string Cidade {
                 get {
-                    try {
-                        return ((string)(this[this.tableENDERECOFUNC.CidadeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Cidade\' na tabela \'ENDERECOFUNC\' é DBNull.", e);
-                    }
+                    return ((string)(this[this.tableENDERECOFUNC.CidadeColumn]));
                 }
                 set {
                     this[this.tableENDERECOFUNC.CidadeColumn] = value;
@@ -2405,7 +2394,12 @@ namespace RHSolutions {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string Cep {
                 get {
-                    return ((string)(this[this.tableENDERECOFUNC.CepColumn]));
+                    try {
+                        return ((string)(this[this.tableENDERECOFUNC.CepColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Cep\' na tabela \'ENDERECOFUNC\' é DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableENDERECOFUNC.CepColumn] = value;
@@ -2416,23 +2410,11 @@ namespace RHSolutions {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public FUNCIONARIORow FUNCIONARIORow {
                 get {
-                    return ((FUNCIONARIORow)(this.GetParentRow(this.Table.ParentRelations["FK__ENDERECOFUN__Cpf__48CFD27E"])));
+                    return ((FUNCIONARIORow)(this.GetParentRow(this.Table.ParentRelations["FK__ENDERECOFUN__Cpf__3E52440B"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__ENDERECOFUN__Cpf__48CFD27E"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__ENDERECOFUN__Cpf__3E52440B"]);
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNumeroNull() {
-                return this.IsNull(this.tableENDERECOFUNC.NumeroColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNumeroNull() {
-                this[this.tableENDERECOFUNC.NumeroColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2449,14 +2431,14 @@ namespace RHSolutions {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsCidadeNull() {
-                return this.IsNull(this.tableENDERECOFUNC.CidadeColumn);
+            public bool IsCepNull() {
+                return this.IsNull(this.tableENDERECOFUNC.CepColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetCidadeNull() {
-                this[this.tableENDERECOFUNC.CidadeColumn] = global::System.Convert.DBNull;
+            public void SetCepNull() {
+                this[this.tableENDERECOFUNC.CepColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2553,7 +2535,12 @@ namespace RHSolutions {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public System.DateTime DataLimiteGozo {
                 get {
-                    return ((global::System.DateTime)(this[this.tableFERIAS.DataLimiteGozoColumn]));
+                    try {
+                        return ((global::System.DateTime)(this[this.tableFERIAS.DataLimiteGozoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'DataLimiteGozo\' na tabela \'FERIAS\' é DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableFERIAS.DataLimiteGozoColumn] = value;
@@ -2564,10 +2551,10 @@ namespace RHSolutions {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public FUNCIONARIORow FUNCIONARIORow {
                 get {
-                    return ((FUNCIONARIORow)(this.GetParentRow(this.Table.ParentRelations["FK__FERIAS__Cpf__46E78A0C"])));
+                    return ((FUNCIONARIORow)(this.GetParentRow(this.Table.ParentRelations["FK__FERIAS__Cpf__38996AB5"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__FERIAS__Cpf__46E78A0C"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__FERIAS__Cpf__38996AB5"]);
                 }
             }
             
@@ -2618,6 +2605,18 @@ namespace RHSolutions {
             public void SetQtdPeriodosNull() {
                 this[this.tableFERIAS.QtdPeriodosColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsDataLimiteGozoNull() {
+                return this.IsNull(this.tableFERIAS.DataLimiteGozoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetDataLimiteGozoNull() {
+                this[this.tableFERIAS.DataLimiteGozoColumn] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -2660,7 +2659,12 @@ namespace RHSolutions {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string TelefoneFunc {
                 get {
-                    return ((string)(this[this.tableFUNCIONARIO.TelefoneFuncColumn]));
+                    try {
+                        return ((string)(this[this.tableFUNCIONARIO.TelefoneFuncColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'TelefoneFunc\' na tabela \'FUNCIONARIO\' é DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableFUNCIONARIO.TelefoneFuncColumn] = value;
@@ -2720,12 +2724,7 @@ namespace RHSolutions {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public double VAuxilioRefeicao {
                 get {
-                    try {
-                        return ((double)(this[this.tableFUNCIONARIO.VAuxilioRefeicaoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'VAuxilioRefeicao\' na tabela \'FUNCIONARIO\' é DBNull.", e);
-                    }
+                    return ((double)(this[this.tableFUNCIONARIO.VAuxilioRefeicaoColumn]));
                 }
                 set {
                     this[this.tableFUNCIONARIO.VAuxilioRefeicaoColumn] = value;
@@ -2778,6 +2777,18 @@ namespace RHSolutions {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsTelefoneFuncNull() {
+                return this.IsNull(this.tableFUNCIONARIO.TelefoneFuncColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetTelefoneFuncNull() {
+                this[this.tableFUNCIONARIO.TelefoneFuncColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsVAuxilioAlimentacaoNull() {
                 return this.IsNull(this.tableFUNCIONARIO.VAuxilioAlimentacaoColumn);
             }
@@ -2790,57 +2801,45 @@ namespace RHSolutions {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsVAuxilioRefeicaoNull() {
-                return this.IsNull(this.tableFUNCIONARIO.VAuxilioRefeicaoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetVAuxilioRefeicaoNull() {
-                this[this.tableFUNCIONARIO.VAuxilioRefeicaoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public EMPRESARow[] GetEMPRESARows() {
-                if ((this.Table.ChildRelations["FK__EMPRESA__CpfFunc__44FF419A"] == null)) {
+                if ((this.Table.ChildRelations["FK__EMPRESA__CpfFunc__3C69FB99"] == null)) {
                     return new EMPRESARow[0];
                 }
                 else {
-                    return ((EMPRESARow[])(base.GetChildRows(this.Table.ChildRelations["FK__EMPRESA__CpfFunc__44FF419A"])));
+                    return ((EMPRESARow[])(base.GetChildRows(this.Table.ChildRelations["FK__EMPRESA__CpfFunc__3C69FB99"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public ENDERECOFUNCRow[] GetENDERECOFUNCRows() {
-                if ((this.Table.ChildRelations["FK__ENDERECOFUN__Cpf__48CFD27E"] == null)) {
+                if ((this.Table.ChildRelations["FK__ENDERECOFUN__Cpf__3E52440B"] == null)) {
                     return new ENDERECOFUNCRow[0];
                 }
                 else {
-                    return ((ENDERECOFUNCRow[])(base.GetChildRows(this.Table.ChildRelations["FK__ENDERECOFUN__Cpf__48CFD27E"])));
+                    return ((ENDERECOFUNCRow[])(base.GetChildRows(this.Table.ChildRelations["FK__ENDERECOFUN__Cpf__3E52440B"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public FERIASRow[] GetFERIASRows() {
-                if ((this.Table.ChildRelations["FK__FERIAS__Cpf__46E78A0C"] == null)) {
+                if ((this.Table.ChildRelations["FK__FERIAS__Cpf__38996AB5"] == null)) {
                     return new FERIASRow[0];
                 }
                 else {
-                    return ((FERIASRow[])(base.GetChildRows(this.Table.ChildRelations["FK__FERIAS__Cpf__46E78A0C"])));
+                    return ((FERIASRow[])(base.GetChildRows(this.Table.ChildRelations["FK__FERIAS__Cpf__38996AB5"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public PONTORow[] GetPONTORows() {
-                if ((this.Table.ChildRelations["FK__PONTO__Cpf__4316F928"] == null)) {
+                if ((this.Table.ChildRelations["FK__PONTO__Cpf__3A81B327"] == null)) {
                     return new PONTORow[0];
                 }
                 else {
-                    return ((PONTORow[])(base.GetChildRows(this.Table.ChildRelations["FK__PONTO__Cpf__4316F928"])));
+                    return ((PONTORow[])(base.GetChildRows(this.Table.ChildRelations["FK__PONTO__Cpf__3A81B327"])));
                 }
             }
         }
@@ -2954,7 +2953,12 @@ namespace RHSolutions {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public System.DateTime Dia {
                 get {
-                    return ((global::System.DateTime)(this[this.tablePONTO.DiaColumn]));
+                    try {
+                        return ((global::System.DateTime)(this[this.tablePONTO.DiaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Dia\' na tabela \'PONTO\' é DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tablePONTO.DiaColumn] = value;
@@ -2965,10 +2969,10 @@ namespace RHSolutions {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public FUNCIONARIORow FUNCIONARIORow {
                 get {
-                    return ((FUNCIONARIORow)(this.GetParentRow(this.Table.ParentRelations["FK__PONTO__Cpf__4316F928"])));
+                    return ((FUNCIONARIORow)(this.GetParentRow(this.Table.ParentRelations["FK__PONTO__Cpf__3A81B327"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__PONTO__Cpf__4316F928"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__PONTO__Cpf__3A81B327"]);
                 }
             }
             
@@ -3030,6 +3034,18 @@ namespace RHSolutions {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetHorasTrabalhadasNull() {
                 this[this.tablePONTO.HorasTrabalhadasColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsDiaNull() {
+                return this.IsNull(this.tablePONTO.DiaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetDiaNull() {
+                this[this.tablePONTO.DiaColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -3685,19 +3701,14 @@ namespace RHSolutions.RHSOLUTIONSDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Endereco, global::System.Nullable<int> Numero, string Complemento, string Cidade, string Cpf, string Cep) {
+        public virtual int Insert(string Endereco, int Numero, string Complemento, string Cidade, string Cpf, string Cep) {
             if ((Endereco == null)) {
                 throw new global::System.ArgumentNullException("Endereco");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Endereco));
             }
-            if ((Numero.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(Numero.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(Numero));
             if ((Complemento == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
@@ -3705,7 +3716,7 @@ namespace RHSolutions.RHSOLUTIONSDataSetTableAdapters {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Complemento));
             }
             if ((Cidade == null)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Cidade");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Cidade));
@@ -3717,7 +3728,7 @@ namespace RHSolutions.RHSOLUTIONSDataSetTableAdapters {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Cpf));
             }
             if ((Cep == null)) {
-                throw new global::System.ArgumentNullException("Cep");
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Cep));
@@ -3954,7 +3965,7 @@ namespace RHSolutions.RHSOLUTIONSDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> QtdDiasPrimeiroPeriodo, global::System.Nullable<int> QtdDiasSegundoPeriodo, global::System.Nullable<int> QtdDiasTerceiroPeriodo, global::System.Nullable<int> QtdPeriodos, string Cpf, System.DateTime DataLimiteGozo) {
+        public virtual int Insert(global::System.Nullable<int> QtdDiasPrimeiroPeriodo, global::System.Nullable<int> QtdDiasSegundoPeriodo, global::System.Nullable<int> QtdDiasTerceiroPeriodo, global::System.Nullable<int> QtdPeriodos, string Cpf, global::System.Nullable<global::System.DateTime> DataLimiteGozo) {
             if ((QtdDiasPrimeiroPeriodo.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((int)(QtdDiasPrimeiroPeriodo.Value));
             }
@@ -3985,7 +3996,12 @@ namespace RHSolutions.RHSOLUTIONSDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Cpf));
             }
-            this.Adapter.InsertCommand.Parameters[5].Value = ((System.DateTime)(DataLimiteGozo));
+            if ((DataLimiteGozo.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((System.DateTime)(DataLimiteGozo.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -4139,16 +4155,16 @@ namespace RHSolutions.RHSOLUTIONSDataSetTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[FUNCIONARIO] WHERE (([Cpf] = @Original_Cpf) AND ([Nome] = @Original_Nome) AND ([TelefoneFunc] = @Original_TelefoneFunc) AND ([SalarioFunc] = @Original_SalarioFunc) AND ([Funcional] = @Original_Funcional) AND ((@IsNull_VAuxilioAlimentacao = 1 AND [VAuxilioAlimentacao] IS NULL) OR ([VAuxilioAlimentacao] = @Original_VAuxilioAlimentacao)) AND ((@IsNull_VAuxilioRefeicao = 1 AND [VAuxilioRefeicao] IS NULL) OR ([VAuxilioRefeicao] = @Original_VAuxilioRefeicao)) AND ([Senha] = @Original_Senha) AND ([DataInicio] = @Original_DataInicio) AND ([DataFim] = @Original_DataFim))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[FUNCIONARIO] WHERE (([Cpf] = @Original_Cpf) AND ([Nome] = @Original_Nome) AND ((@IsNull_TelefoneFunc = 1 AND [TelefoneFunc] IS NULL) OR ([TelefoneFunc] = @Original_TelefoneFunc)) AND ([SalarioFunc] = @Original_SalarioFunc) AND ([Funcional] = @Original_Funcional) AND ((@IsNull_VAuxilioAlimentacao = 1 AND [VAuxilioAlimentacao] IS NULL) OR ([VAuxilioAlimentacao] = @Original_VAuxilioAlimentacao)) AND ([VAuxilioRefeicao] = @Original_VAuxilioRefeicao) AND ([Senha] = @Original_Senha) AND ([DataInicio] = @Original_DataInicio) AND ([DataFim] = @Original_DataFim))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cpf", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cpf", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nome", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nome", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TelefoneFunc", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelefoneFunc", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TelefoneFunc", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelefoneFunc", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SalarioFunc", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SalarioFunc", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Funcional", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Funcional", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_VAuxilioAlimentacao", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VAuxilioAlimentacao", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_VAuxilioAlimentacao", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VAuxilioAlimentacao", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_VAuxilioRefeicao", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VAuxilioRefeicao", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_VAuxilioRefeicao", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VAuxilioRefeicao", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Senha", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Senha", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DataInicio", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DataInicio", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -4172,7 +4188,7 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DataFim", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DataFim", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[FUNCIONARIO] SET [Cpf] = @Cpf, [Nome] = @Nome, [TelefoneFunc] = @TelefoneFunc, [CargoFunc] = @CargoFunc, [SalarioFunc] = @SalarioFunc, [Funcional] = @Funcional, [VAuxilioAlimentacao] = @VAuxilioAlimentacao, [VAuxilioRefeicao] = @VAuxilioRefeicao, [Senha] = @Senha, [Email] = @Email, [DataInicio] = @DataInicio, [DataFim] = @DataFim WHERE (([Cpf] = @Original_Cpf) AND ([Nome] = @Original_Nome) AND ([TelefoneFunc] = @Original_TelefoneFunc) AND ([SalarioFunc] = @Original_SalarioFunc) AND ([Funcional] = @Original_Funcional) AND ((@IsNull_VAuxilioAlimentacao = 1 AND [VAuxilioAlimentacao] IS NULL) OR ([VAuxilioAlimentacao] = @Original_VAuxilioAlimentacao)) AND ((@IsNull_VAuxilioRefeicao = 1 AND [VAuxilioRefeicao] IS NULL) OR ([VAuxilioRefeicao] = @Original_VAuxilioRefeicao)) AND ([Senha] = @Original_Senha) AND ([DataInicio] = @Original_DataInicio) AND ([DataFim] = @Original_DataFim));
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[FUNCIONARIO] SET [Cpf] = @Cpf, [Nome] = @Nome, [TelefoneFunc] = @TelefoneFunc, [CargoFunc] = @CargoFunc, [SalarioFunc] = @SalarioFunc, [Funcional] = @Funcional, [VAuxilioAlimentacao] = @VAuxilioAlimentacao, [VAuxilioRefeicao] = @VAuxilioRefeicao, [Senha] = @Senha, [Email] = @Email, [DataInicio] = @DataInicio, [DataFim] = @DataFim WHERE (([Cpf] = @Original_Cpf) AND ([Nome] = @Original_Nome) AND ((@IsNull_TelefoneFunc = 1 AND [TelefoneFunc] IS NULL) OR ([TelefoneFunc] = @Original_TelefoneFunc)) AND ([SalarioFunc] = @Original_SalarioFunc) AND ([Funcional] = @Original_Funcional) AND ((@IsNull_VAuxilioAlimentacao = 1 AND [VAuxilioAlimentacao] IS NULL) OR ([VAuxilioAlimentacao] = @Original_VAuxilioAlimentacao)) AND ([VAuxilioRefeicao] = @Original_VAuxilioRefeicao) AND ([Senha] = @Original_Senha) AND ([DataInicio] = @Original_DataInicio) AND ([DataFim] = @Original_DataFim));
 SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlimentacao, VAuxilioRefeicao, Senha, Email, DataInicio, DataFim FROM FUNCIONARIO WHERE (Cpf = @Cpf)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cpf", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cpf", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -4189,12 +4205,12 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DataFim", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DataFim", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cpf", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cpf", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nome", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nome", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TelefoneFunc", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelefoneFunc", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TelefoneFunc", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TelefoneFunc", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SalarioFunc", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SalarioFunc", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Funcional", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Funcional", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_VAuxilioAlimentacao", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VAuxilioAlimentacao", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_VAuxilioAlimentacao", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VAuxilioAlimentacao", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_VAuxilioRefeicao", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VAuxilioRefeicao", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_VAuxilioRefeicao", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VAuxilioRefeicao", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Senha", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Senha", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DataInicio", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DataInicio", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -4276,7 +4292,7 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_Cpf, string Original_Nome, string Original_TelefoneFunc, double Original_SalarioFunc, string Original_Funcional, global::System.Nullable<double> Original_VAuxilioAlimentacao, global::System.Nullable<double> Original_VAuxilioRefeicao, string Original_Senha, System.DateTime Original_DataInicio, System.DateTime Original_DataFim) {
+        public virtual int Delete(string Original_Cpf, string Original_Nome, string Original_TelefoneFunc, double Original_SalarioFunc, string Original_Funcional, global::System.Nullable<double> Original_VAuxilioAlimentacao, double Original_VAuxilioRefeicao, string Original_Senha, System.DateTime Original_DataInicio, System.DateTime Original_DataFim) {
             if ((Original_Cpf == null)) {
                 throw new global::System.ArgumentNullException("Original_Cpf");
             }
@@ -4290,34 +4306,29 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_Nome));
             }
             if ((Original_TelefoneFunc == null)) {
-                throw new global::System.ArgumentNullException("Original_TelefoneFunc");
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_TelefoneFunc));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_TelefoneFunc));
             }
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((double)(Original_SalarioFunc));
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((double)(Original_SalarioFunc));
             if ((Original_Funcional == null)) {
                 throw new global::System.ArgumentNullException("Original_Funcional");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Funcional));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_Funcional));
             }
             if ((Original_VAuxilioAlimentacao.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((double)(Original_VAuxilioAlimentacao.Value));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((double)(Original_VAuxilioAlimentacao.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
-            if ((Original_VAuxilioRefeicao.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((double)(Original_VAuxilioRefeicao.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.DeleteCommand.Parameters[8].Value = ((double)(Original_VAuxilioRefeicao));
             if ((Original_Senha == null)) {
                 throw new global::System.ArgumentNullException("Original_Senha");
             }
@@ -4346,7 +4357,7 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Cpf, string Nome, string TelefoneFunc, string CargoFunc, double SalarioFunc, string Funcional, global::System.Nullable<double> VAuxilioAlimentacao, global::System.Nullable<double> VAuxilioRefeicao, string Senha, string Email, System.DateTime DataInicio, System.DateTime DataFim) {
+        public virtual int Insert(string Cpf, string Nome, string TelefoneFunc, string CargoFunc, double SalarioFunc, string Funcional, global::System.Nullable<double> VAuxilioAlimentacao, double VAuxilioRefeicao, string Senha, string Email, System.DateTime DataInicio, System.DateTime DataFim) {
             if ((Cpf == null)) {
                 throw new global::System.ArgumentNullException("Cpf");
             }
@@ -4360,7 +4371,7 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Nome));
             }
             if ((TelefoneFunc == null)) {
-                throw new global::System.ArgumentNullException("TelefoneFunc");
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(TelefoneFunc));
@@ -4384,12 +4395,7 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((VAuxilioRefeicao.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((double)(VAuxilioRefeicao.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.InsertCommand.Parameters[7].Value = ((double)(VAuxilioRefeicao));
             if ((Senha == null)) {
                 throw new global::System.ArgumentNullException("Senha");
             }
@@ -4432,7 +4438,7 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
                     double SalarioFunc, 
                     string Funcional, 
                     global::System.Nullable<double> VAuxilioAlimentacao, 
-                    global::System.Nullable<double> VAuxilioRefeicao, 
+                    double VAuxilioRefeicao, 
                     string Senha, 
                     string Email, 
                     System.DateTime DataInicio, 
@@ -4443,7 +4449,7 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
                     double Original_SalarioFunc, 
                     string Original_Funcional, 
                     global::System.Nullable<double> Original_VAuxilioAlimentacao, 
-                    global::System.Nullable<double> Original_VAuxilioRefeicao, 
+                    double Original_VAuxilioRefeicao, 
                     string Original_Senha, 
                     System.DateTime Original_DataInicio, 
                     System.DateTime Original_DataFim) {
@@ -4460,7 +4466,7 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Nome));
             }
             if ((TelefoneFunc == null)) {
-                throw new global::System.ArgumentNullException("TelefoneFunc");
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(TelefoneFunc));
@@ -4484,12 +4490,7 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((VAuxilioRefeicao.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((double)(VAuxilioRefeicao.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((double)(VAuxilioRefeicao));
             if ((Senha == null)) {
                 throw new global::System.ArgumentNullException("Senha");
             }
@@ -4517,34 +4518,29 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
                 this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_Nome));
             }
             if ((Original_TelefoneFunc == null)) {
-                throw new global::System.ArgumentNullException("Original_TelefoneFunc");
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_TelefoneFunc));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_TelefoneFunc));
             }
-            this.Adapter.UpdateCommand.Parameters[15].Value = ((double)(Original_SalarioFunc));
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((double)(Original_SalarioFunc));
             if ((Original_Funcional == null)) {
                 throw new global::System.ArgumentNullException("Original_Funcional");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_Funcional));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_Funcional));
             }
             if ((Original_VAuxilioAlimentacao.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((double)(Original_VAuxilioAlimentacao.Value));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((double)(Original_VAuxilioAlimentacao.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
             }
-            if ((Original_VAuxilioRefeicao.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((double)(Original_VAuxilioRefeicao.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.UpdateCommand.Parameters[20].Value = ((double)(Original_VAuxilioRefeicao));
             if ((Original_Senha == null)) {
                 throw new global::System.ArgumentNullException("Original_Senha");
             }
@@ -4580,7 +4576,7 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
                     double SalarioFunc, 
                     string Funcional, 
                     global::System.Nullable<double> VAuxilioAlimentacao, 
-                    global::System.Nullable<double> VAuxilioRefeicao, 
+                    double VAuxilioRefeicao, 
                     string Senha, 
                     string Email, 
                     System.DateTime DataInicio, 
@@ -4591,7 +4587,7 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
                     double Original_SalarioFunc, 
                     string Original_Funcional, 
                     global::System.Nullable<double> Original_VAuxilioAlimentacao, 
-                    global::System.Nullable<double> Original_VAuxilioRefeicao, 
+                    double Original_VAuxilioRefeicao, 
                     string Original_Senha, 
                     System.DateTime Original_DataInicio, 
                     System.DateTime Original_DataFim) {
@@ -4818,7 +4814,7 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<global::System.TimeSpan> PrimeiraBatida, global::System.Nullable<global::System.TimeSpan> SegundaBatida, global::System.Nullable<global::System.TimeSpan> TerceiraBatida, global::System.Nullable<global::System.TimeSpan> QuartaBatida, global::System.Nullable<global::System.TimeSpan> HorasTrabalhadas, string Cpf, System.DateTime Dia) {
+        public virtual int Insert(global::System.Nullable<global::System.TimeSpan> PrimeiraBatida, global::System.Nullable<global::System.TimeSpan> SegundaBatida, global::System.Nullable<global::System.TimeSpan> TerceiraBatida, global::System.Nullable<global::System.TimeSpan> QuartaBatida, global::System.Nullable<global::System.TimeSpan> HorasTrabalhadas, string Cpf, global::System.Nullable<global::System.DateTime> Dia) {
             if ((PrimeiraBatida.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((System.TimeSpan)(PrimeiraBatida.Value));
             }
@@ -4855,7 +4851,12 @@ SELECT Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, VAuxilioAlime
             else {
                 this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Cpf));
             }
-            this.Adapter.InsertCommand.Parameters[6].Value = ((System.DateTime)(Dia));
+            if ((Dia.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((System.DateTime)(Dia.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {

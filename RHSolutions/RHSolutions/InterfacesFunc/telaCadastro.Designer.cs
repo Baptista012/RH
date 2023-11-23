@@ -39,7 +39,6 @@ namespace RHSolutions
             this.TelefoneEmpresa = new System.Windows.Forms.Label();
             this.MtxTelEmp = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txEnder = new System.Windows.Forms.TextBox();
             this.txValeTrans = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txValeRefei = new System.Windows.Forms.TextBox();
@@ -70,18 +69,27 @@ namespace RHSolutions
             this.txEmail = new System.Windows.Forms.TextBox();
             this.txNome = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BTCadastrarEmp = new System.Windows.Forms.Button();
             this.VoltarBT = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BTExcluirfunc = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.MtxExcFunc = new System.Windows.Forms.MaskedTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.MtxExEmp = new System.Windows.Forms.MaskedTextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.BTexcluirEmp = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.BTCadastrarEmp = new System.Windows.Forms.Button();
+            this.txEnder = new System.Windows.Forms.TextBox();
+            this.txNumEnd = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txCidade = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.mTxtCep = new System.Windows.Forms.MaskedTextBox();
+            this.mTxtCnpjFunc = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -168,6 +176,14 @@ namespace RHSolutions
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.mTxtCnpjFunc);
+            this.groupBox1.Controls.Add(this.mTxtCep);
+            this.groupBox1.Controls.Add(this.label19);
+            this.groupBox1.Controls.Add(this.txCidade);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Controls.Add(this.txNumEnd);
+            this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.txEnder);
             this.groupBox1.Controls.Add(this.txValeTrans);
             this.groupBox1.Controls.Add(this.label16);
@@ -201,29 +217,22 @@ namespace RHSolutions
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBox1.Location = new System.Drawing.Point(12, 95);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(890, 576);
+            this.groupBox1.Size = new System.Drawing.Size(890, 597);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro de funcionário";
             // 
-            // txEnder
-            // 
-            this.txEnder.Location = new System.Drawing.Point(34, 317);
-            this.txEnder.Name = "txEnder";
-            this.txEnder.Size = new System.Drawing.Size(359, 23);
-            this.txEnder.TabIndex = 55;
-            // 
             // txValeTrans
             // 
-            this.txValeTrans.Location = new System.Drawing.Point(498, 366);
+            this.txValeTrans.Location = new System.Drawing.Point(34, 317);
             this.txValeTrans.Name = "txValeTrans";
-            this.txValeTrans.Size = new System.Drawing.Size(292, 23);
+            this.txValeTrans.Size = new System.Drawing.Size(360, 23);
             this.txValeTrans.TabIndex = 54;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(495, 346);
+            this.label16.Location = new System.Drawing.Point(31, 297);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(114, 17);
             this.label16.TabIndex = 53;
@@ -252,6 +261,7 @@ namespace RHSolutions
             this.MtxtFim.Name = "MtxtFim";
             this.MtxtFim.Size = new System.Drawing.Size(292, 23);
             this.MtxtFim.TabIndex = 50;
+            this.MtxtFim.ValidatingType = typeof(System.DateTime);
             // 
             // MtxtInicio
             // 
@@ -260,6 +270,7 @@ namespace RHSolutions
             this.MtxtInicio.Name = "MtxtInicio";
             this.MtxtInicio.Size = new System.Drawing.Size(359, 23);
             this.MtxtInicio.TabIndex = 49;
+            this.MtxtInicio.ValidatingType = typeof(System.DateTime);
             // 
             // txSalario
             // 
@@ -330,7 +341,7 @@ namespace RHSolutions
             // MtxTelefone
             // 
             this.MtxTelefone.Location = new System.Drawing.Point(498, 179);
-            this.MtxTelefone.Mask = "(00)000000000";
+            this.MtxTelefone.Mask = "00000000000";
             this.MtxTelefone.Name = "MtxTelefone";
             this.MtxTelefone.Size = new System.Drawing.Size(292, 23);
             this.MtxTelefone.TabIndex = 36;
@@ -391,7 +402,7 @@ namespace RHSolutions
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(30, 297);
+            this.label6.Location = new System.Drawing.Point(31, 436);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 17);
             this.label6.TabIndex = 28;
@@ -411,7 +422,7 @@ namespace RHSolutions
             this.CadastrarBT.BackColor = System.Drawing.Color.Black;
             this.CadastrarBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CadastrarBT.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.CadastrarBT.Location = new System.Drawing.Point(210, 501);
+            this.CadastrarBT.Location = new System.Drawing.Point(213, 528);
             this.CadastrarBT.Name = "CadastrarBT";
             this.CadastrarBT.Size = new System.Drawing.Size(392, 50);
             this.CadastrarBT.TabIndex = 26;
@@ -481,6 +492,19 @@ namespace RHSolutions
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cadastro de empresa";
             // 
+            // BTCadastrarEmp
+            // 
+            this.BTCadastrarEmp.BackColor = System.Drawing.Color.Black;
+            this.BTCadastrarEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTCadastrarEmp.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BTCadastrarEmp.Location = new System.Drawing.Point(195, 290);
+            this.BTCadastrarEmp.Name = "BTCadastrarEmp";
+            this.BTCadastrarEmp.Size = new System.Drawing.Size(392, 50);
+            this.BTCadastrarEmp.TabIndex = 27;
+            this.BTCadastrarEmp.Text = "Cadastrar";
+            this.BTCadastrarEmp.UseVisualStyleBackColor = false;
+            this.BTCadastrarEmp.Click += new System.EventHandler(this.BTCadastrarEmp_Click);
+            // 
             // VoltarBT
             // 
             this.VoltarBT.BackColor = System.Drawing.Color.Coral;
@@ -496,7 +520,7 @@ namespace RHSolutions
             // 
             this.groupBox3.Controls.Add(this.BTExcluirfunc);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.maskedTextBox2);
+            this.groupBox3.Controls.Add(this.MtxExcFunc);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Location = new System.Drawing.Point(22, 718);
             this.groupBox3.Name = "groupBox3";
@@ -528,13 +552,13 @@ namespace RHSolutions
             this.label13.TabIndex = 35;
             this.label13.Text = "CPF:";
             // 
-            // maskedTextBox2
+            // MtxExcFunc
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(275, 133);
-            this.maskedTextBox2.Mask = "000.000.000-00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(292, 20);
-            this.maskedTextBox2.TabIndex = 34;
+            this.MtxExcFunc.Location = new System.Drawing.Point(275, 133);
+            this.MtxExcFunc.Mask = "000.000.000-00";
+            this.MtxExcFunc.Name = "MtxExcFunc";
+            this.MtxExcFunc.Size = new System.Drawing.Size(292, 20);
+            this.MtxExcFunc.TabIndex = 34;
             // 
             // label10
             // 
@@ -604,18 +628,78 @@ namespace RHSolutions
             this.label1.TabIndex = 10;
             this.label1.Text = "Digite o Cnpj da empresa que será excluida";
             // 
-            // BTCadastrarEmp
+            // txEnder
             // 
-            this.BTCadastrarEmp.BackColor = System.Drawing.Color.Black;
-            this.BTCadastrarEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTCadastrarEmp.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BTCadastrarEmp.Location = new System.Drawing.Point(195, 290);
-            this.BTCadastrarEmp.Name = "BTCadastrarEmp";
-            this.BTCadastrarEmp.Size = new System.Drawing.Size(392, 50);
-            this.BTCadastrarEmp.TabIndex = 27;
-            this.BTCadastrarEmp.Text = "Cadastrar";
-            this.BTCadastrarEmp.UseVisualStyleBackColor = false;
-            this.BTCadastrarEmp.Click += new System.EventHandler(this.BTCadastrarEmp_Click);
+            this.txEnder.Location = new System.Drawing.Point(33, 456);
+            this.txEnder.Name = "txEnder";
+            this.txEnder.Size = new System.Drawing.Size(360, 23);
+            this.txEnder.TabIndex = 55;
+            // 
+            // txNumEnd
+            // 
+            this.txNumEnd.Location = new System.Drawing.Point(498, 456);
+            this.txNumEnd.Name = "txNumEnd";
+            this.txNumEnd.Size = new System.Drawing.Size(292, 23);
+            this.txNumEnd.TabIndex = 57;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(496, 436);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(62, 17);
+            this.label17.TabIndex = 56;
+            this.label17.Text = "Número:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(495, 346);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(126, 17);
+            this.label18.TabIndex = 58;
+            this.label18.Text = "CNPJ da empresa:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(496, 479);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(37, 17);
+            this.label19.TabIndex = 62;
+            this.label19.Text = "Cep:";
+            // 
+            // txCidade
+            // 
+            this.txCidade.Location = new System.Drawing.Point(33, 499);
+            this.txCidade.Name = "txCidade";
+            this.txCidade.Size = new System.Drawing.Size(360, 23);
+            this.txCidade.TabIndex = 61;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(31, 479);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(56, 17);
+            this.label20.TabIndex = 60;
+            this.label20.Text = "Cidade:";
+            // 
+            // mTxtCep
+            // 
+            this.mTxtCep.Location = new System.Drawing.Point(498, 499);
+            this.mTxtCep.Mask = "00000-000";
+            this.mTxtCep.Name = "mTxtCep";
+            this.mTxtCep.Size = new System.Drawing.Size(292, 23);
+            this.mTxtCep.TabIndex = 64;
+            // 
+            // mTxtCnpjFunc
+            // 
+            this.mTxtCnpjFunc.Location = new System.Drawing.Point(498, 366);
+            this.mTxtCnpjFunc.Mask = "00.000.000/0000-00";
+            this.mTxtCnpjFunc.Name = "mTxtCnpjFunc";
+            this.mTxtCnpjFunc.Size = new System.Drawing.Size(292, 23);
+            this.mTxtCnpjFunc.TabIndex = 65;
             // 
             // Form3
             // 
@@ -683,7 +767,7 @@ namespace RHSolutions
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button BTExcluirfunc;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox MtxExcFunc;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.MaskedTextBox MtxExEmp;
@@ -696,7 +780,15 @@ namespace RHSolutions
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txValeRefei;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txEnder;
         private System.Windows.Forms.Button BTCadastrarEmp;
+        private System.Windows.Forms.TextBox txEnder;
+        private System.Windows.Forms.TextBox txNumEnd;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txCidade;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.MaskedTextBox mTxtCnpjFunc;
+        private System.Windows.Forms.MaskedTextBox mTxtCep;
     }
 }

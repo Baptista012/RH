@@ -51,9 +51,9 @@
     <Compile Include="Controladores\LoginControl.cs" />
     <Compile Include="Controladores\PagamentoControl.cs" />
     <Compile Include="Controladores\PontoControl.cs" />
+    <Compile Include="Controladores\SQLConect.cs" />
     <Compile Include="Data\EmpresaData.cs" />
     <Compile Include="Data\FuncionarioData.cs" />
-    <Compile Include="Data\funcionarioData_.cs" />
     <Compile Include="Data\LoginData.cs" />
     <Compile Include="Data\PontoData.cs" />
     <Compile Include="Data\ResidenciaData.cs" />
@@ -102,11 +102,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RHDBDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RHDBDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="RHSOLUTIONSDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -151,17 +146,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="RHDBDataSet.xsc">
-      <DependentUpon>RHDBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="RHDBDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>RHDBDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="RHDBDataSet.xss">
-      <DependentUpon>RHDBDataSet.xsd</DependentUpon>
-    </None>
     <None Include="RHSOLUTIONSDataSet.xsc">
       <DependentUpon>RHSOLUTIONSDataSet.xsd</DependentUpon>
     </None>

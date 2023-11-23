@@ -36,49 +36,36 @@ namespace RHSolutions.Interfaces
             this.Lpagar = new System.Windows.Forms.Label();
             this.FuncPagaBT = new System.Windows.Forms.Button();
             this.PesquisarBt = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cpfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fUNCIONARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rHSOLUTIONSDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rHSOLUTIONSDataSet = new RHSolutions.RHSOLUTIONSDataSet();
             this.MtxtCpf = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.fUNCIONARIOTableAdapter = new RHSolutions.RHSOLUTIONSDataSetTableAdapters.FUNCIONARIOTableAdapter();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.MtxtPagaEmp = new System.Windows.Forms.MaskedTextBox();
             this.LPagaEmp = new System.Windows.Forms.Label();
             this.EmpPagaBT = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.cpfFuncionarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Salario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeEmpresaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cnpjEmpresaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.enderEmpresaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefoneEmpresaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eMPRESABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.PesquisarEmpBT = new System.Windows.Forms.Button();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.eMPRESATableAdapter = new RHSolutions.RHSOLUTIONSDataSetTableAdapters.EMPRESATableAdapter();
-            this.fKENDERECOFUNCpf48CFD27EBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.eNDERECOFUNCTableAdapter = new RHSolutions.RHSOLUTIONSDataSetTableAdapters.ENDERECOFUNCTableAdapter();
-            this.dataFimDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataInicioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vAuxilioRefeicaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vAuxilioAlimentacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.funcionalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salarioFuncDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cargoFuncDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.rHSOLUTIONSDataSet = new RHSolutions.RHSOLUTIONSDataSet();
+            this.fUNCIONARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fUNCIONARIOTableAdapter = new RHSolutions.RHSOLUTIONSDataSetTableAdapters.FUNCIONARIOTableAdapter();
+            this.cpfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefoneFuncDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cargoFuncDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salarioFuncDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.funcionalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vAuxilioAlimentacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vAuxilioRefeicaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataInicioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataFimDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rHSOLUTIONSDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rHSOLUTIONSDataSet)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMPRESABindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKENDERECOFUNCpf48CFD27EBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rHSOLUTIONSDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // BtVoltar
@@ -98,7 +85,6 @@ namespace RHSolutions.Interfaces
             this.groupBox1.Controls.Add(this.Lpagar);
             this.groupBox1.Controls.Add(this.FuncPagaBT);
             this.groupBox1.Controls.Add(this.PesquisarBt);
-            this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.MtxtCpf);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -148,48 +134,6 @@ namespace RHSolutions.Interfaces
             this.PesquisarBt.Text = "Pesquisar";
             this.PesquisarBt.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cpfDataGridViewTextBoxColumn,
-            this.nomeDataGridViewTextBoxColumn,
-            this.cargoFuncDataGridViewTextBoxColumn,
-            this.salarioFuncDataGridViewTextBoxColumn,
-            this.funcionalDataGridViewTextBoxColumn,
-            this.vAuxilioAlimentacaoDataGridViewTextBoxColumn,
-            this.vAuxilioRefeicaoDataGridViewTextBoxColumn,
-            this.dataInicioDataGridViewTextBoxColumn,
-            this.dataFimDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.fUNCIONARIOBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 85);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(888, 324);
-            this.dataGridView1.TabIndex = 6;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // cpfDataGridViewTextBoxColumn
-            // 
-            this.cpfDataGridViewTextBoxColumn.DataPropertyName = "Cpf";
-            this.cpfDataGridViewTextBoxColumn.HeaderText = "Cpf";
-            this.cpfDataGridViewTextBoxColumn.Name = "cpfDataGridViewTextBoxColumn";
-            // 
-            // fUNCIONARIOBindingSource
-            // 
-            this.fUNCIONARIOBindingSource.DataMember = "FUNCIONARIO";
-            this.fUNCIONARIOBindingSource.DataSource = this.rHSOLUTIONSDataSetBindingSource;
-            // 
-            // rHSOLUTIONSDataSetBindingSource
-            // 
-            this.rHSOLUTIONSDataSetBindingSource.DataSource = this.rHSOLUTIONSDataSet;
-            this.rHSOLUTIONSDataSetBindingSource.Position = 0;
-            // 
-            // rHSOLUTIONSDataSet
-            // 
-            this.rHSOLUTIONSDataSet.DataSetName = "RHSOLUTIONSDataSet";
-            this.rHSOLUTIONSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // MtxtCpf
             // 
             this.MtxtCpf.Location = new System.Drawing.Point(216, 32);
@@ -207,16 +151,12 @@ namespace RHSolutions.Interfaces
             this.label1.TabIndex = 3;
             this.label1.Text = "Digite o Cpf do funcionário :";
             // 
-            // fUNCIONARIOTableAdapter
-            // 
-            this.fUNCIONARIOTableAdapter.ClearBeforeFill = true;
-            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Controls.Add(this.MtxtPagaEmp);
             this.groupBox2.Controls.Add(this.LPagaEmp);
             this.groupBox2.Controls.Add(this.EmpPagaBT);
-            this.groupBox2.Controls.Add(this.dataGridView2);
             this.groupBox2.Controls.Add(this.PesquisarEmpBT);
             this.groupBox2.Controls.Add(this.maskedTextBox2);
             this.groupBox2.Controls.Add(this.label2);
@@ -255,70 +195,7 @@ namespace RHSolutions.Interfaces
             this.EmpPagaBT.TabIndex = 18;
             this.EmpPagaBT.Text = "Gerar informações de pagamento empresa";
             this.EmpPagaBT.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cpfFuncionarioDataGridViewTextBoxColumn,
-            this.Salario,
-            this.nomeEmpresaDataGridViewTextBoxColumn,
-            this.cnpjEmpresaDataGridViewTextBoxColumn,
-            this.enderEmpresaDataGridViewTextBoxColumn,
-            this.telefoneEmpresaDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.eMPRESABindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(40, 85);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(773, 324);
-            this.dataGridView2.TabIndex = 17;
-            // 
-            // cpfFuncionarioDataGridViewTextBoxColumn
-            // 
-            this.cpfFuncionarioDataGridViewTextBoxColumn.DataPropertyName = "CpfFuncionario";
-            this.cpfFuncionarioDataGridViewTextBoxColumn.HeaderText = "CpfFuncionario";
-            this.cpfFuncionarioDataGridViewTextBoxColumn.Name = "cpfFuncionarioDataGridViewTextBoxColumn";
-            this.cpfFuncionarioDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // Salario
-            // 
-            this.Salario.HeaderText = "SalarioFunc";
-            this.Salario.Name = "Salario";
-            this.Salario.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Salario.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // nomeEmpresaDataGridViewTextBoxColumn
-            // 
-            this.nomeEmpresaDataGridViewTextBoxColumn.DataPropertyName = "NomeEmpresa";
-            this.nomeEmpresaDataGridViewTextBoxColumn.HeaderText = "NomeEmpresa";
-            this.nomeEmpresaDataGridViewTextBoxColumn.Name = "nomeEmpresaDataGridViewTextBoxColumn";
-            this.nomeEmpresaDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // cnpjEmpresaDataGridViewTextBoxColumn
-            // 
-            this.cnpjEmpresaDataGridViewTextBoxColumn.DataPropertyName = "CnpjEmpresa";
-            this.cnpjEmpresaDataGridViewTextBoxColumn.HeaderText = "CnpjEmpresa";
-            this.cnpjEmpresaDataGridViewTextBoxColumn.Name = "cnpjEmpresaDataGridViewTextBoxColumn";
-            this.cnpjEmpresaDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // enderEmpresaDataGridViewTextBoxColumn
-            // 
-            this.enderEmpresaDataGridViewTextBoxColumn.DataPropertyName = "EnderEmpresa";
-            this.enderEmpresaDataGridViewTextBoxColumn.HeaderText = "EnderEmpresa";
-            this.enderEmpresaDataGridViewTextBoxColumn.Name = "enderEmpresaDataGridViewTextBoxColumn";
-            this.enderEmpresaDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // telefoneEmpresaDataGridViewTextBoxColumn
-            // 
-            this.telefoneEmpresaDataGridViewTextBoxColumn.DataPropertyName = "TelefoneEmpresa";
-            this.telefoneEmpresaDataGridViewTextBoxColumn.HeaderText = "TelefoneEmpresa";
-            this.telefoneEmpresaDataGridViewTextBoxColumn.Name = "telefoneEmpresaDataGridViewTextBoxColumn";
-            this.telefoneEmpresaDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // eMPRESABindingSource
-            // 
-            this.eMPRESABindingSource.DataMember = "EMPRESA";
-            this.eMPRESABindingSource.DataSource = this.rHSOLUTIONSDataSetBindingSource;
+            this.EmpPagaBT.Click += new System.EventHandler(this.EmpPagaBT_Click);
             // 
             // PesquisarEmpBT
             // 
@@ -348,54 +225,60 @@ namespace RHSolutions.Interfaces
             this.label2.TabIndex = 14;
             this.label2.Text = "Digite o CNPJ da empresa :";
             // 
-            // eMPRESATableAdapter
+            // dataGridView1
             // 
-            this.eMPRESATableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cpfDataGridViewTextBoxColumn,
+            this.nomeDataGridViewTextBoxColumn,
+            this.telefoneFuncDataGridViewTextBoxColumn,
+            this.cargoFuncDataGridViewTextBoxColumn,
+            this.salarioFuncDataGridViewTextBoxColumn,
+            this.funcionalDataGridViewTextBoxColumn,
+            this.vAuxilioAlimentacaoDataGridViewTextBoxColumn,
+            this.vAuxilioRefeicaoDataGridViewTextBoxColumn,
+            this.senhaDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.dataInicioDataGridViewTextBoxColumn,
+            this.dataFimDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.fUNCIONARIOBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(21, 135);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(763, 213);
+            this.dataGridView1.TabIndex = 21;
             // 
-            // fKENDERECOFUNCpf48CFD27EBindingSource
+            // rHSOLUTIONSDataSet
             // 
-            this.fKENDERECOFUNCpf48CFD27EBindingSource.DataMember = "FK__ENDERECOFUN__Cpf__48CFD27E";
-            this.fKENDERECOFUNCpf48CFD27EBindingSource.DataSource = this.fUNCIONARIOBindingSource;
+            this.rHSOLUTIONSDataSet.DataSetName = "RHSOLUTIONSDataSet";
+            this.rHSOLUTIONSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // eNDERECOFUNCTableAdapter
+            // fUNCIONARIOBindingSource
             // 
-            this.eNDERECOFUNCTableAdapter.ClearBeforeFill = true;
+            this.fUNCIONARIOBindingSource.DataMember = "FUNCIONARIO";
+            this.fUNCIONARIOBindingSource.DataSource = this.rHSOLUTIONSDataSet;
             // 
-            // dataFimDataGridViewTextBoxColumn
+            // fUNCIONARIOTableAdapter
             // 
-            this.dataFimDataGridViewTextBoxColumn.DataPropertyName = "DataFim";
-            this.dataFimDataGridViewTextBoxColumn.HeaderText = "DataFim";
-            this.dataFimDataGridViewTextBoxColumn.Name = "dataFimDataGridViewTextBoxColumn";
+            this.fUNCIONARIOTableAdapter.ClearBeforeFill = true;
             // 
-            // dataInicioDataGridViewTextBoxColumn
+            // cpfDataGridViewTextBoxColumn
             // 
-            this.dataInicioDataGridViewTextBoxColumn.DataPropertyName = "DataInicio";
-            this.dataInicioDataGridViewTextBoxColumn.HeaderText = "DataInicio";
-            this.dataInicioDataGridViewTextBoxColumn.Name = "dataInicioDataGridViewTextBoxColumn";
+            this.cpfDataGridViewTextBoxColumn.DataPropertyName = "Cpf";
+            this.cpfDataGridViewTextBoxColumn.HeaderText = "Cpf";
+            this.cpfDataGridViewTextBoxColumn.Name = "cpfDataGridViewTextBoxColumn";
             // 
-            // vAuxilioRefeicaoDataGridViewTextBoxColumn
+            // nomeDataGridViewTextBoxColumn
             // 
-            this.vAuxilioRefeicaoDataGridViewTextBoxColumn.DataPropertyName = "VAuxilioRefeicao";
-            this.vAuxilioRefeicaoDataGridViewTextBoxColumn.HeaderText = "VAuxilioRefeicao";
-            this.vAuxilioRefeicaoDataGridViewTextBoxColumn.Name = "vAuxilioRefeicaoDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
             // 
-            // vAuxilioAlimentacaoDataGridViewTextBoxColumn
+            // telefoneFuncDataGridViewTextBoxColumn
             // 
-            this.vAuxilioAlimentacaoDataGridViewTextBoxColumn.DataPropertyName = "VAuxilioAlimentacao";
-            this.vAuxilioAlimentacaoDataGridViewTextBoxColumn.HeaderText = "VAuxilioAlimentacao";
-            this.vAuxilioAlimentacaoDataGridViewTextBoxColumn.Name = "vAuxilioAlimentacaoDataGridViewTextBoxColumn";
-            // 
-            // funcionalDataGridViewTextBoxColumn
-            // 
-            this.funcionalDataGridViewTextBoxColumn.DataPropertyName = "Funcional";
-            this.funcionalDataGridViewTextBoxColumn.HeaderText = "Funcional";
-            this.funcionalDataGridViewTextBoxColumn.Name = "funcionalDataGridViewTextBoxColumn";
-            // 
-            // salarioFuncDataGridViewTextBoxColumn
-            // 
-            this.salarioFuncDataGridViewTextBoxColumn.DataPropertyName = "SalarioFunc";
-            this.salarioFuncDataGridViewTextBoxColumn.HeaderText = "SalarioFunc";
-            this.salarioFuncDataGridViewTextBoxColumn.Name = "salarioFuncDataGridViewTextBoxColumn";
+            this.telefoneFuncDataGridViewTextBoxColumn.DataPropertyName = "TelefoneFunc";
+            this.telefoneFuncDataGridViewTextBoxColumn.HeaderText = "TelefoneFunc";
+            this.telefoneFuncDataGridViewTextBoxColumn.Name = "telefoneFuncDataGridViewTextBoxColumn";
             // 
             // cargoFuncDataGridViewTextBoxColumn
             // 
@@ -403,11 +286,53 @@ namespace RHSolutions.Interfaces
             this.cargoFuncDataGridViewTextBoxColumn.HeaderText = "CargoFunc";
             this.cargoFuncDataGridViewTextBoxColumn.Name = "cargoFuncDataGridViewTextBoxColumn";
             // 
-            // nomeDataGridViewTextBoxColumn
+            // salarioFuncDataGridViewTextBoxColumn
             // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.salarioFuncDataGridViewTextBoxColumn.DataPropertyName = "SalarioFunc";
+            this.salarioFuncDataGridViewTextBoxColumn.HeaderText = "SalarioFunc";
+            this.salarioFuncDataGridViewTextBoxColumn.Name = "salarioFuncDataGridViewTextBoxColumn";
+            // 
+            // funcionalDataGridViewTextBoxColumn
+            // 
+            this.funcionalDataGridViewTextBoxColumn.DataPropertyName = "Funcional";
+            this.funcionalDataGridViewTextBoxColumn.HeaderText = "Funcional";
+            this.funcionalDataGridViewTextBoxColumn.Name = "funcionalDataGridViewTextBoxColumn";
+            // 
+            // vAuxilioAlimentacaoDataGridViewTextBoxColumn
+            // 
+            this.vAuxilioAlimentacaoDataGridViewTextBoxColumn.DataPropertyName = "VAuxilioAlimentacao";
+            this.vAuxilioAlimentacaoDataGridViewTextBoxColumn.HeaderText = "VAuxilioAlimentacao";
+            this.vAuxilioAlimentacaoDataGridViewTextBoxColumn.Name = "vAuxilioAlimentacaoDataGridViewTextBoxColumn";
+            // 
+            // vAuxilioRefeicaoDataGridViewTextBoxColumn
+            // 
+            this.vAuxilioRefeicaoDataGridViewTextBoxColumn.DataPropertyName = "VAuxilioRefeicao";
+            this.vAuxilioRefeicaoDataGridViewTextBoxColumn.HeaderText = "VAuxilioRefeicao";
+            this.vAuxilioRefeicaoDataGridViewTextBoxColumn.Name = "vAuxilioRefeicaoDataGridViewTextBoxColumn";
+            // 
+            // senhaDataGridViewTextBoxColumn
+            // 
+            this.senhaDataGridViewTextBoxColumn.DataPropertyName = "Senha";
+            this.senhaDataGridViewTextBoxColumn.HeaderText = "Senha";
+            this.senhaDataGridViewTextBoxColumn.Name = "senhaDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // dataInicioDataGridViewTextBoxColumn
+            // 
+            this.dataInicioDataGridViewTextBoxColumn.DataPropertyName = "DataInicio";
+            this.dataInicioDataGridViewTextBoxColumn.HeaderText = "DataInicio";
+            this.dataInicioDataGridViewTextBoxColumn.Name = "dataInicioDataGridViewTextBoxColumn";
+            // 
+            // dataFimDataGridViewTextBoxColumn
+            // 
+            this.dataFimDataGridViewTextBoxColumn.DataPropertyName = "DataFim";
+            this.dataFimDataGridViewTextBoxColumn.HeaderText = "DataFim";
+            this.dataFimDataGridViewTextBoxColumn.Name = "dataFimDataGridViewTextBoxColumn";
             // 
             // telaPagamento
             // 
@@ -422,15 +347,11 @@ namespace RHSolutions.Interfaces
             this.Load += new System.EventHandler(this.telaPagamento_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rHSOLUTIONSDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rHSOLUTIONSDataSet)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMPRESABindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKENDERECOFUNCpf48CFD27EBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rHSOLUTIONSDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -440,41 +361,32 @@ namespace RHSolutions.Interfaces
         private System.Windows.Forms.Button BtVoltar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource rHSOLUTIONSDataSetBindingSource;
-        private RHSOLUTIONSDataSet rHSOLUTIONSDataSet;
         private System.Windows.Forms.MaskedTextBox MtxtCpf;
-        private System.Windows.Forms.BindingSource fUNCIONARIOBindingSource;
-        private RHSOLUTIONSDataSetTableAdapters.FUNCIONARIOTableAdapter fUNCIONARIOTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cpfDataGridViewTextBoxColumn;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label Lpagar;
         private System.Windows.Forms.Button FuncPagaBT;
         private System.Windows.Forms.Button PesquisarBt;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button PesquisarEmpBT;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.BindingSource eMPRESABindingSource;
-        private RHSOLUTIONSDataSetTableAdapters.EMPRESATableAdapter eMPRESATableAdapter;
         private System.Windows.Forms.Button EmpPagaBT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cpfFuncionarioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Salario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomeEmpresaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cnpjEmpresaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn enderEmpresaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telefoneEmpresaDataGridViewTextBoxColumn;
         private System.Windows.Forms.MaskedTextBox MtxtPagaEmp;
         private System.Windows.Forms.Label LPagaEmp;
-        private System.Windows.Forms.BindingSource fKENDERECOFUNCpf48CFD27EBindingSource;
-        private RHSOLUTIONSDataSetTableAdapters.ENDERECOFUNCTableAdapter eNDERECOFUNCTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private RHSOLUTIONSDataSet rHSOLUTIONSDataSet;
+        private System.Windows.Forms.BindingSource fUNCIONARIOBindingSource;
+        private RHSOLUTIONSDataSetTableAdapters.FUNCIONARIOTableAdapter fUNCIONARIOTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cpfDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefoneFuncDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cargoFuncDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn salarioFuncDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn funcionalDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn vAuxilioAlimentacaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn vAuxilioRefeicaoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn senhaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataInicioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataFimDataGridViewTextBoxColumn;
     }

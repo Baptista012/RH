@@ -169,7 +169,6 @@ namespace RHSolutions
             this.CntrFerias.Name = "CntrFerias";
             this.CntrFerias.Size = new System.Drawing.Size(491, 501);
             this.CntrFerias.TabIndex = 10;
-            this.CntrFerias.Text = "button1";
             this.CntrFerias.UseVisualStyleBackColor = true;
             this.CntrFerias.Click += new System.EventHandler(this.CntrFerias_Click);
             // 

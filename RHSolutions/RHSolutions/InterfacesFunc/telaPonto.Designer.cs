@@ -29,108 +29,14 @@ namespace RHSolutions.Interfaces
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.rHSOLUTIONSDataSet = new RHSolutions.RHSOLUTIONSDataSet();
-            this.rHSOLUTIONSDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pONTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pONTOTableAdapter = new RHSolutions.RHSOLUTIONSDataSetTableAdapters.PONTOTableAdapter();
-            this.cpfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horasTrabalhadasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.primeiraBatidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.segundaBatidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.terceiraBatidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quartaBatidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MtxtCpf = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Lcpf = new System.Windows.Forms.Label();
             this.BtVoltar = new System.Windows.Forms.Button();
             this.PesquisarBt = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rHSOLUTIONSDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rHSOLUTIONSDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pONTOBindingSource)).BeginInit();
+            this.GridPonto = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.GridPonto)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cpfDataGridViewTextBoxColumn,
-            this.diaDataGridViewTextBoxColumn,
-            this.horasTrabalhadasDataGridViewTextBoxColumn,
-            this.primeiraBatidaDataGridViewTextBoxColumn,
-            this.segundaBatidaDataGridViewTextBoxColumn,
-            this.terceiraBatidaDataGridViewTextBoxColumn,
-            this.quartaBatidaDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.pONTOBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 113);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(744, 429);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // rHSOLUTIONSDataSet
-            // 
-            this.rHSOLUTIONSDataSet.DataSetName = "RHSOLUTIONSDataSet";
-            this.rHSOLUTIONSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rHSOLUTIONSDataSetBindingSource
-            // 
-            this.rHSOLUTIONSDataSetBindingSource.DataSource = this.rHSOLUTIONSDataSet;
-            this.rHSOLUTIONSDataSetBindingSource.Position = 0;
-            // 
-            // pONTOBindingSource
-            // 
-            this.pONTOBindingSource.DataMember = "PONTO";
-            this.pONTOBindingSource.DataSource = this.rHSOLUTIONSDataSetBindingSource;
-            // 
-            // pONTOTableAdapter
-            // 
-            this.pONTOTableAdapter.ClearBeforeFill = true;
-            // 
-            // cpfDataGridViewTextBoxColumn
-            // 
-            this.cpfDataGridViewTextBoxColumn.DataPropertyName = "Cpf";
-            this.cpfDataGridViewTextBoxColumn.HeaderText = "Cpf";
-            this.cpfDataGridViewTextBoxColumn.Name = "cpfDataGridViewTextBoxColumn";
-            // 
-            // diaDataGridViewTextBoxColumn
-            // 
-            this.diaDataGridViewTextBoxColumn.DataPropertyName = "Dia";
-            this.diaDataGridViewTextBoxColumn.HeaderText = "Dia";
-            this.diaDataGridViewTextBoxColumn.Name = "diaDataGridViewTextBoxColumn";
-            // 
-            // horasTrabalhadasDataGridViewTextBoxColumn
-            // 
-            this.horasTrabalhadasDataGridViewTextBoxColumn.DataPropertyName = "HorasTrabalhadas";
-            this.horasTrabalhadasDataGridViewTextBoxColumn.HeaderText = "HorasTrabalhadas";
-            this.horasTrabalhadasDataGridViewTextBoxColumn.Name = "horasTrabalhadasDataGridViewTextBoxColumn";
-            // 
-            // primeiraBatidaDataGridViewTextBoxColumn
-            // 
-            this.primeiraBatidaDataGridViewTextBoxColumn.DataPropertyName = "PrimeiraBatida";
-            this.primeiraBatidaDataGridViewTextBoxColumn.HeaderText = "PrimeiraBatida";
-            this.primeiraBatidaDataGridViewTextBoxColumn.Name = "primeiraBatidaDataGridViewTextBoxColumn";
-            // 
-            // segundaBatidaDataGridViewTextBoxColumn
-            // 
-            this.segundaBatidaDataGridViewTextBoxColumn.DataPropertyName = "SegundaBatida";
-            this.segundaBatidaDataGridViewTextBoxColumn.HeaderText = "SegundaBatida";
-            this.segundaBatidaDataGridViewTextBoxColumn.Name = "segundaBatidaDataGridViewTextBoxColumn";
-            // 
-            // terceiraBatidaDataGridViewTextBoxColumn
-            // 
-            this.terceiraBatidaDataGridViewTextBoxColumn.DataPropertyName = "TerceiraBatida";
-            this.terceiraBatidaDataGridViewTextBoxColumn.HeaderText = "TerceiraBatida";
-            this.terceiraBatidaDataGridViewTextBoxColumn.Name = "terceiraBatidaDataGridViewTextBoxColumn";
-            // 
-            // quartaBatidaDataGridViewTextBoxColumn
-            // 
-            this.quartaBatidaDataGridViewTextBoxColumn.DataPropertyName = "QuartaBatida";
-            this.quartaBatidaDataGridViewTextBoxColumn.HeaderText = "QuartaBatida";
-            this.quartaBatidaDataGridViewTextBoxColumn.Name = "quartaBatidaDataGridViewTextBoxColumn";
             // 
             // MtxtCpf
             // 
@@ -183,48 +89,42 @@ namespace RHSolutions.Interfaces
             this.PesquisarBt.TabIndex = 12;
             this.PesquisarBt.Text = "Pesquisar";
             this.PesquisarBt.UseVisualStyleBackColor = false;
+            this.PesquisarBt.Click += new System.EventHandler(this.PesquisarBt_Click);
+            // 
+            // GridPonto
+            // 
+            this.GridPonto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridPonto.Location = new System.Drawing.Point(29, 116);
+            this.GridPonto.Name = "GridPonto";
+            this.GridPonto.Size = new System.Drawing.Size(931, 444);
+            this.GridPonto.TabIndex = 13;
             // 
             // telaPonto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.GridPonto);
             this.Controls.Add(this.PesquisarBt);
             this.Controls.Add(this.BtVoltar);
             this.Controls.Add(this.Lcpf);
             this.Controls.Add(this.MtxtCpf);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "telaPonto";
             this.Text = "telaPonto";
             this.Load += new System.EventHandler(this.telaPonto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rHSOLUTIONSDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rHSOLUTIONSDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pONTOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridPonto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource rHSOLUTIONSDataSetBindingSource;
-        private RHSOLUTIONSDataSet rHSOLUTIONSDataSet;
-        private System.Windows.Forms.BindingSource pONTOBindingSource;
-        private RHSOLUTIONSDataSetTableAdapters.PONTOTableAdapter pONTOTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cpfDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horasTrabalhadasDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn primeiraBatidaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn segundaBatidaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn terceiraBatidaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quartaBatidaDataGridViewTextBoxColumn;
         private System.Windows.Forms.MaskedTextBox MtxtCpf;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Lcpf;
         private System.Windows.Forms.Button BtVoltar;
         private System.Windows.Forms.Button PesquisarBt;
+        private System.Windows.Forms.DataGridView GridPonto;
     }
 }

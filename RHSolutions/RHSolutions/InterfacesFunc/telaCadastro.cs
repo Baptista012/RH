@@ -39,18 +39,22 @@ namespace RHSolutions
             {
                
                 _funcionarioData.NomeFunc = txNome.Text;
-                _funcionarioData.CpfFunc = Convert.ToInt32( MtxCpf.Text);
-                _funcionarioData.Funcional = Convert.ToInt32(txFuncional);
-                _funcionarioData.TelefoneFunc = Convert.ToInt32(MtxTelefone);
+                _funcionarioData.CpfFunc =  MtxCpf.Text.Replace("," ,".");
+                _funcionarioData.Funcional = txFuncional.Text;
+                _funcionarioData.TelefoneFunc = MtxTelefone.Text;
                 _funcionarioData.CargoFunc = TxCargo.Text;
-                _funcionarioData.SalarioFunc = Convert.ToDouble(txSalario);
+                _funcionarioData.SalarioFunc = float.Parse(txSalario.Text);
                 _funcionarioData.Email = txEmail.Text;
                 _funcionarioData.Senha = mtxSenha.Text;
-                _funcionarioData.VAuxilioAlimentacao = Convert.ToInt32(txValeAlim);
-                _funcionarioData.VAuxilioTransporte = Convert.ToInt32(txValeTrans);
-                _funcionarioData.EnderecoFunc = txEnder.Text;
-                _funcionarioData.Inicio = Convert.ToDateTime(MtxtInicio);
-                _funcionarioData.Fim = Convert.ToDateTime(MtxtFim);
+                _funcionarioData.VAuxilioAlimentacao = float.Parse(txValeAlim.Text);
+                _funcionarioData.VAuxlioRefeicao = float.Parse(txValeRefei.Text);
+                _funcionarioData.VAuxilioTransporte = 2;
+                _funcionarioData.Inicio = Convert.ToDateTime(MtxtInicio.Text);
+                _funcionarioData.Fim = Convert.ToDateTime(MtxtFim.Text);
+                _funcionarioData.Endereco = txEnder.Text;
+                _funcionarioData.Cidade = txCidade.Text;
+                _funcionarioData.Cep = mTxtCep.Text;
+                _funcionarioData.Numero = Convert.ToInt32(txNumEnd.Text);
 
                
 
@@ -77,10 +81,10 @@ namespace RHSolutions
             bool retorno = false;
             try
             {
-                _empresaData.CnpjEmpresa = Convert.ToInt32(MtxCnpjEmpr);
+                _empresaData.CnpjEmpresa = MtxCnpjEmpr.Text.Replace(",", ".");
                 _empresaData.NomeEmpresa = txNomeEmp.Text;
                 _empresaData.EnderEmpresa = txEnderecoEmp.Text;
-                _empresaData.TelefoneEmpresa = Convert.ToInt32(MtxTelEmp);
+                _empresaData.TelefoneEmpresa = MtxTelEmp.Text;
 
                 retorno = _cadastroEmpresa.Incluirempresa(_empresaData);
                 if (retorno)
@@ -100,16 +104,52 @@ namespace RHSolutions
 
         private void BTExcluirfunc_Click(object sender, EventArgs e)
         {
-
+            bool retorno = false;
+            FuncionarioData exfuncionarioData = new FuncionarioData();
+            CadastroFuncio excadastroFuncio = new CadastroFuncio();
+            try
+            {
+                exfuncionarioData.CpfFunc = MtxExcFunc.Text.Replace(",",".");
+                retorno = excadastroFuncio.ExcluirFunc(exfuncionarioData);
+                if (retorno)
+                {
+                    MessageBox.Show("Funcionário excluido.");
+                }
+                else
+                {
+                    MessageBox.Show("Não foi possível excluir o funcionário");
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
         }
 
         private void BTexcluirEmp_Click(object sender, EventArgs e)
         {
+            bool retorno = false;
             EmpresaData exempresaData = new EmpresaData();
             CadastroEmpresa excadastroEmpresa = new CadastroEmpresa();
-
-            exempresaData.CnpjEmpresa = Convert.ToInt32(MtxExEmp);
-            excadastroEmpresa.ExcluirEmpresa(exempresaData);
+            try
+            {
+                exempresaData.CnpjEmpresa = MtxExEmp.Text.Replace(",", ".");
+                retorno = excadastroEmpresa.ExcluirEmpresa(exempresaData);
+                if (retorno)
+                {
+                    MessageBox.Show("Empresa excluida");
+                }
+                else
+                {
+                    MessageBox.Show("Não foi possível excluir a empresa");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
         }
+
+       
     }
 }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using RHSolutions.Controladores;
 
 namespace RHSolutions.Interfaces
 {
@@ -19,8 +21,7 @@ namespace RHSolutions.Interfaces
 
         private void telaFerias_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'rhdbDataSet1.FUNCIONARIO'. Você pode movê-la ou removê-la conforme necessário.
-            this.fUNCIONARIOTableAdapter.Fill(this.rhdbDataSet1.FUNCIONARIO);
+          
 
         }
 
@@ -34,6 +35,36 @@ namespace RHSolutions.Interfaces
             Form4 Menu = new Form4();
             Menu.ShowDialog();
             this.Close();
+        }
+
+        private void dataViewFerias_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+       
+        private void PesquisarBt_Click(object sender, EventArgs e)
+        {      
+            try
+            {
+                using (SqlConnection conexaoDB = new SqlConnection(SQLConect.conexaoSql))
+                {
+                    conexaoDB.Open();
+                    var busca = buscarCPF.Text.Replace(",", ".");
+                    var sqlQuery = $"SELECT * FROM FERIAS where Cpf = '{busca}'";
+                    using (SqlDataAdapter da = new SqlDataAdapter(sqlQuery, conexaoDB))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            da.Fill(dt);
+                            GridFerias.DataSource = dt;
+                        }
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show( "Erro: "+ex);
+            }
         }
     }
 }
