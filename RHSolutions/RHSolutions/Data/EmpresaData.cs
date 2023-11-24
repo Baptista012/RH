@@ -8,6 +8,7 @@ namespace RHSolutions.Data
 {
     class EmpresaData
     {
+        public string CpfPadrao { get; set; }
         public string NomeEmpresa { get; set; }
         public string CnpjEmpresa { get; set; }
         public string EnderEmpresa { get; set; }

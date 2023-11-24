@@ -39,7 +39,15 @@ namespace RHSolutions
             this.TelefoneEmpresa = new System.Windows.Forms.Label();
             this.MtxTelEmp = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txValeTrans = new System.Windows.Forms.TextBox();
+            this.mTxtCnpjFunc = new System.Windows.Forms.MaskedTextBox();
+            this.mTxtCep = new System.Windows.Forms.MaskedTextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txCidade = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txNumEnd = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txEnder = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txValeRefei = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -81,15 +89,7 @@ namespace RHSolutions
             this.label14 = new System.Windows.Forms.Label();
             this.BTexcluirEmp = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txEnder = new System.Windows.Forms.TextBox();
-            this.txNumEnd = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txCidade = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.mTxtCep = new System.Windows.Forms.MaskedTextBox();
-            this.mTxtCnpjFunc = new System.Windows.Forms.MaskedTextBox();
+            this.cbxValeTrans = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -169,13 +169,14 @@ namespace RHSolutions
             // MtxTelEmp
             // 
             this.MtxTelEmp.Location = new System.Drawing.Point(456, 205);
-            this.MtxTelEmp.Mask = "(00)000000000";
+            this.MtxTelEmp.Mask = "00000000000";
             this.MtxTelEmp.Name = "MtxTelEmp";
             this.MtxTelEmp.Size = new System.Drawing.Size(262, 23);
             this.MtxTelEmp.TabIndex = 20;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbxValeTrans);
             this.groupBox1.Controls.Add(this.mTxtCnpjFunc);
             this.groupBox1.Controls.Add(this.mTxtCep);
             this.groupBox1.Controls.Add(this.label19);
@@ -185,7 +186,6 @@ namespace RHSolutions
             this.groupBox1.Controls.Add(this.txNumEnd);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.txEnder);
-            this.groupBox1.Controls.Add(this.txValeTrans);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.txValeRefei);
             this.groupBox1.Controls.Add(this.label15);
@@ -222,12 +222,78 @@ namespace RHSolutions
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro de funcionário";
             // 
-            // txValeTrans
+            // mTxtCnpjFunc
             // 
-            this.txValeTrans.Location = new System.Drawing.Point(34, 317);
-            this.txValeTrans.Name = "txValeTrans";
-            this.txValeTrans.Size = new System.Drawing.Size(360, 23);
-            this.txValeTrans.TabIndex = 54;
+            this.mTxtCnpjFunc.Location = new System.Drawing.Point(498, 366);
+            this.mTxtCnpjFunc.Mask = "00.000.000/0000-00";
+            this.mTxtCnpjFunc.Name = "mTxtCnpjFunc";
+            this.mTxtCnpjFunc.Size = new System.Drawing.Size(292, 23);
+            this.mTxtCnpjFunc.TabIndex = 65;
+            // 
+            // mTxtCep
+            // 
+            this.mTxtCep.Location = new System.Drawing.Point(498, 499);
+            this.mTxtCep.Mask = "00000-000";
+            this.mTxtCep.Name = "mTxtCep";
+            this.mTxtCep.Size = new System.Drawing.Size(292, 23);
+            this.mTxtCep.TabIndex = 64;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(496, 479);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(37, 17);
+            this.label19.TabIndex = 62;
+            this.label19.Text = "Cep:";
+            // 
+            // txCidade
+            // 
+            this.txCidade.Location = new System.Drawing.Point(33, 499);
+            this.txCidade.Name = "txCidade";
+            this.txCidade.Size = new System.Drawing.Size(360, 23);
+            this.txCidade.TabIndex = 61;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(31, 479);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(56, 17);
+            this.label20.TabIndex = 60;
+            this.label20.Text = "Cidade:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(495, 346);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(126, 17);
+            this.label18.TabIndex = 58;
+            this.label18.Text = "CNPJ da empresa:";
+            // 
+            // txNumEnd
+            // 
+            this.txNumEnd.Location = new System.Drawing.Point(498, 456);
+            this.txNumEnd.Name = "txNumEnd";
+            this.txNumEnd.Size = new System.Drawing.Size(292, 23);
+            this.txNumEnd.TabIndex = 57;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(496, 436);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(62, 17);
+            this.label17.TabIndex = 56;
+            this.label17.Text = "Número:";
+            // 
+            // txEnder
+            // 
+            this.txEnder.Location = new System.Drawing.Point(33, 456);
+            this.txEnder.Name = "txEnder";
+            this.txEnder.Size = new System.Drawing.Size(360, 23);
+            this.txEnder.TabIndex = 55;
             // 
             // label16
             // 
@@ -628,78 +694,16 @@ namespace RHSolutions
             this.label1.TabIndex = 10;
             this.label1.Text = "Digite o Cnpj da empresa que será excluida";
             // 
-            // txEnder
+            // cbxValeTrans
             // 
-            this.txEnder.Location = new System.Drawing.Point(33, 456);
-            this.txEnder.Name = "txEnder";
-            this.txEnder.Size = new System.Drawing.Size(360, 23);
-            this.txEnder.TabIndex = 55;
-            // 
-            // txNumEnd
-            // 
-            this.txNumEnd.Location = new System.Drawing.Point(498, 456);
-            this.txNumEnd.Name = "txNumEnd";
-            this.txNumEnd.Size = new System.Drawing.Size(292, 23);
-            this.txNumEnd.TabIndex = 57;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(496, 436);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(62, 17);
-            this.label17.TabIndex = 56;
-            this.label17.Text = "Número:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(495, 346);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(126, 17);
-            this.label18.TabIndex = 58;
-            this.label18.Text = "CNPJ da empresa:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(496, 479);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(37, 17);
-            this.label19.TabIndex = 62;
-            this.label19.Text = "Cep:";
-            // 
-            // txCidade
-            // 
-            this.txCidade.Location = new System.Drawing.Point(33, 499);
-            this.txCidade.Name = "txCidade";
-            this.txCidade.Size = new System.Drawing.Size(360, 23);
-            this.txCidade.TabIndex = 61;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(31, 479);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(56, 17);
-            this.label20.TabIndex = 60;
-            this.label20.Text = "Cidade:";
-            // 
-            // mTxtCep
-            // 
-            this.mTxtCep.Location = new System.Drawing.Point(498, 499);
-            this.mTxtCep.Mask = "00000-000";
-            this.mTxtCep.Name = "mTxtCep";
-            this.mTxtCep.Size = new System.Drawing.Size(292, 23);
-            this.mTxtCep.TabIndex = 64;
-            // 
-            // mTxtCnpjFunc
-            // 
-            this.mTxtCnpjFunc.Location = new System.Drawing.Point(498, 366);
-            this.mTxtCnpjFunc.Mask = "00.000.000/0000-00";
-            this.mTxtCnpjFunc.Name = "mTxtCnpjFunc";
-            this.mTxtCnpjFunc.Size = new System.Drawing.Size(292, 23);
-            this.mTxtCnpjFunc.TabIndex = 65;
+            this.cbxValeTrans.FormattingEnabled = true;
+            this.cbxValeTrans.Items.AddRange(new object[] {
+            "Sim",
+            "Não"});
+            this.cbxValeTrans.Location = new System.Drawing.Point(34, 317);
+            this.cbxValeTrans.Name = "cbxValeTrans";
+            this.cbxValeTrans.Size = new System.Drawing.Size(121, 24);
+            this.cbxValeTrans.TabIndex = 66;
             // 
             // Form3
             // 
@@ -776,7 +780,6 @@ namespace RHSolutions
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox MtxtInicio;
         private System.Windows.Forms.MaskedTextBox MtxtFim;
-        private System.Windows.Forms.TextBox txValeTrans;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txValeRefei;
         private System.Windows.Forms.Label label15;
@@ -790,5 +793,6 @@ namespace RHSolutions
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.MaskedTextBox mTxtCnpjFunc;
         private System.Windows.Forms.MaskedTextBox mTxtCep;
+        private System.Windows.Forms.ComboBox cbxValeTrans;
     }
 }

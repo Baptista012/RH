@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RHSolutions.Data;
+using RHSolutions.Controladores;
+using System.Data.SqlClient;
 
 namespace RHSolutions.Interfaces
 {
@@ -44,6 +47,57 @@ namespace RHSolutions.Interfaces
         private void EmpPagaBT_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FuncPagaBT_Click(object sender, EventArgs e)
+        {
+            FuncionarioData funcionarioPag = new FuncionarioData();
+            PagamentoControl PagFuncionario = new PagamentoControl();
+            try
+            {
+                funcionarioPag.CpfFunc = MtxtCpf.Text.Replace(",", ".");
+                PagFuncionario.FolhaFuncionario(funcionarioPag);
+                funcionarioPag.Inss = PagFuncionario.ResInss(funcionarioPag);
+                funcionarioPag.Salario = funcionarioPag.Salario - funcionarioPag.Inss;
+                funcionarioPag.Irrf = PagFuncionario.ResIrrf(funcionarioPag);
+                funcionarioPag.Fgts = PagFuncionario.ResFgts(funcionarioPag);
+                double total = (funcionarioPag.Salario - funcionarioPag.Vales - funcionarioPag.Irrf - funcionarioPag.Fgts);
+                txVales.Text = Convert.ToString(funcionarioPag.Vales);
+                txInss.Text = ($"Com: {funcionarioPag.PorInss}, O total é: {funcionarioPag.Inss}");
+                txIrrf.Text = ($"Com: {funcionarioPag.PorIrrf}, O total é: {funcionarioPag.Irrf}");
+                txFgts.Text = ($"Com: {funcionarioPag.PorFgts}, O total é: {funcionarioPag.Fgts}");
+                Total.Text = Convert.ToString(total);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
+
+        }
+
+        private void PesquisarBt_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection conexaoDB = new SqlConnection(SQLConect.conexaoSql))
+                {
+                    conexaoDB.Open();
+                    var busca = MtxtCpf.Text.Replace(",", ".");
+                    var sqlQuery = $"SELECT * FROM Funcionario where Cpf = '{busca}'";
+                    using (SqlDataAdapter da = new SqlDataAdapter(sqlQuery, conexaoDB))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            da.Fill(dt);
+                            GridFunc.DataSource = dt;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex);
+            }
         }
     }
 }

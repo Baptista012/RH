@@ -48,9 +48,10 @@ namespace RHSolutions
                 _funcionarioData.Senha = mtxSenha.Text;
                 _funcionarioData.VAuxilioAlimentacao = float.Parse(txValeAlim.Text);
                 _funcionarioData.VAuxlioRefeicao = float.Parse(txValeRefei.Text);
-                _funcionarioData.VAuxilioTransporte = 2;
+                _funcionarioData.ValeTransporte = cbxValeTrans.Text.Substring(0,1) == "S" ? "S" : "N";
                 _funcionarioData.Inicio = Convert.ToDateTime(MtxtInicio.Text);
                 _funcionarioData.Fim = Convert.ToDateTime(MtxtFim.Text);
+                _funcionarioData.Cnpj = mTxtCnpjFunc.Text.Replace(",", ".");
                 _funcionarioData.Endereco = txEnder.Text;
                 _funcionarioData.Cidade = txCidade.Text;
                 _funcionarioData.Cep = mTxtCep.Text;

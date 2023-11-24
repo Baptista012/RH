@@ -13,6 +13,7 @@ namespace RHSolutions.Controladores
         
         public bool Incluirempresa(EmpresaData _empresaData)
         {
+            _empresaData.CpfPadrao = "123.456.789-01";
             SqlConnection conexaoDB = new SqlConnection(SQLConect.conexaoSql);
             try
             {
@@ -26,6 +27,7 @@ namespace RHSolutions.Controladores
 
                 using (SqlCommand cmd = new SqlCommand(query, conexaoDB))
                 {
+                    cmd.Parameters.AddWithValue("@CpfFuncionario",_empresaData.CpfPadrao);
                     cmd.Parameters.AddWithValue("@NomeEmpresa", _empresaData.NomeEmpresa);
                     cmd.Parameters.AddWithValue("@CnpjEmpresa", _empresaData.CnpjEmpresa);
                     cmd.Parameters.AddWithValue("@EnderEmpresa", _empresaData.EnderEmpresa);

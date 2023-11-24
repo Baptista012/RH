@@ -26,10 +26,17 @@ namespace RHSolutions.Controladores
                     $"'{_funcionarioData.Funcional}', '{_funcionarioData.VAuxilioAlimentacao}', '{_funcionarioData.VAuxilioTransporte}', '{_funcionarioData.Senha}', '{_funcionarioData.Email}', " +
                     $"'{InicioForma}', '{FimForma}' )";*/
                 string query = "INSERT INTO[dbo].[FUNCIONARIO] (Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, " +
-                    "VAuxilioAlimentacao, VAuxilioRefeicao, Senha, Email, DataInicio, DataFim)" +
+                    "VAuxilioAlimentacao, VAuxilioRefeicao, Senha, Email, DataInicio, DataFim,ValeTransporte)" +
                     $" VALUES(@Cpf, @Nome, @TelefoneFunc, @CargoFunc, @SalarioFunc, @Funcional, " +
-                    "@VAuxilioAlimentacao, @VAuxilioRefeicao, @Senha, @Email, @DataInicio, @DataFim)";
+                    "@VAuxilioAlimentacao, @VAuxilioRefeicao, @Senha, @Email, @DataInicio, @DataFim, @ValeTransporte)";
                 string queryEnd = "INSERT INTO [dbo].[ENDERECOFUNC](Endereco, Numero, Cidade, Cpf, Cep) VALUES(@Endereco, @Numero, @Cidade, @Cpf, @Cep)";
+                string queryEmp = "INSERT INTO [dbo].[EMPRESA](CpfFuncionario,CnpjEmpresa) VALUES(@Cpf, @Cnpj)";
+                using (SqlCommand Emp = new SqlCommand(queryEmp, conexaoDB))
+                {
+                    Emp.Parameters.AddWithValue("@Cpf", _funcionarioData.CpfFunc);
+                    Emp.Parameters.AddWithValue("@Cnpj", _funcionarioData.Cnpj);
+                    Emp.ExecuteNonQuery();
+                }
                 using (SqlCommand End = new SqlCommand(queryEnd, conexaoDB))
                 {
                     End.Parameters.AddWithValue("@Endereco", _funcionarioData.Endereco);
@@ -37,6 +44,7 @@ namespace RHSolutions.Controladores
                     End.Parameters.AddWithValue("@Cidade", _funcionarioData.Cidade);
                     End.Parameters.AddWithValue("@Cpf", _funcionarioData.CpfFunc);
                     End.Parameters.AddWithValue("@Cep", _funcionarioData.Cep);
+                    End.ExecuteNonQuery();
 
                 }
                 using (SqlCommand cmd = new SqlCommand(query, conexaoDB))
@@ -54,6 +62,7 @@ namespace RHSolutions.Controladores
                     cmd.Parameters.AddWithValue("@Email", _funcionarioData.Email);
                     cmd.Parameters.AddWithValue("@DataInicio", InicioForma);
                     cmd.Parameters.AddWithValue("@DataFim", FimForma);
+                    cmd.Parameters.AddWithValue("@ValeTransporte", _funcionarioData.ValeTransporte);
                     if (cmd.ExecuteNonQuery() > 0)
                     {
                         conexaoDB.Close();
