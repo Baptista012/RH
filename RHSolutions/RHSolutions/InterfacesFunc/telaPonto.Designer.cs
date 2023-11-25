@@ -96,14 +96,14 @@ namespace RHSolutions.Interfaces
             this.GridPonto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridPonto.Location = new System.Drawing.Point(29, 116);
             this.GridPonto.Name = "GridPonto";
-            this.GridPonto.Size = new System.Drawing.Size(931, 444);
+            this.GridPonto.Size = new System.Drawing.Size(1025, 481);
             this.GridPonto.TabIndex = 13;
             // 
             // telaPonto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1284, 661);
             this.Controls.Add(this.GridPonto);
             this.Controls.Add(this.PesquisarBt);
             this.Controls.Add(this.BtVoltar);

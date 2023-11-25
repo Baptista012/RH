@@ -36,10 +36,10 @@ D:\Códigos\ghrhr\RHSolutionsDesktop\RHSolutions\RHSolutions\obj\Debug\RHSolutio
 D:\Códigos\ghrhr\RHSolutionsDesktop\RHSolutions\RHSolutions\obj\Debug\RHSolutions.Interfaces.telaFerias.resources
 D:\Códigos\ghrhr\RHSolutionsDesktop\RHSolutions\RHSolutions\obj\Debug\RHSolutions.Form2.resources
 D:\Códigos\ghrhr\RHSolutionsDesktop\RHSolutions\RHSolutions\obj\Debug\RHSolutions.Form3.resources
-D:\Códigos\ghrhr\RHSolutionsDesktop\RHSolutions\RHSolutions\obj\Debug\RHSolutions.Form4.resources
 D:\Códigos\ghrhr\RHSolutionsDesktop\RHSolutions\RHSolutions\obj\Debug\RHSolutions.Interfaces.telaPagamento.resources
 D:\Códigos\ghrhr\RHSolutionsDesktop\RHSolutions\RHSolutions\obj\Debug\RHSolutions.Properties.Resources.resources
 D:\Códigos\ghrhr\RHSolutionsDesktop\RHSolutions\RHSolutions\obj\Debug\RHSolutions.csproj.GenerateResource.cache
 D:\Códigos\ghrhr\RHSolutionsDesktop\RHSolutions\RHSolutions\obj\Debug\RHSolutions.csproj.CoreCompileInputs.cache
 D:\Códigos\ghrhr\RHSolutionsDesktop\RHSolutions\RHSolutions\obj\Debug\RHSolutions.exe
 D:\Códigos\ghrhr\RHSolutionsDesktop\RHSolutions\RHSolutions\obj\Debug\RHSolutions.pdb
+D:\Códigos\ghrhr\RHSolutionsDesktop\RHSolutions\RHSolutions\obj\Debug\RHSolutions.Menu.resources

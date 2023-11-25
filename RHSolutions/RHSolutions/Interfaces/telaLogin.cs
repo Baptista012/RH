@@ -61,7 +61,7 @@ namespace RHSolutions
 
                     loginModel.Funcional = reader.GetString(0);
                     this.Close();
-                    Form4 Menu = new Form4();
+                    Menu Menu = new Menu();
                     Menu.ShowDialog();
                 }
             }

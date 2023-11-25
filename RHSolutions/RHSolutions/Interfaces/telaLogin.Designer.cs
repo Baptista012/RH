@@ -124,6 +124,7 @@ namespace RHSolutions
             this.MinimizeBox = false;
             this.Name = "Form2";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela de Login";
             this.ResumeLayout(false);
             this.PerformLayout();

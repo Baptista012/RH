@@ -20,7 +20,7 @@ namespace RHSolutions
         }
         private void VoltarBT_Click(object sender, EventArgs e)
         {
-            Form4 Menu = new Form4();
+            Menu Menu = new Menu();
             Menu.ShowDialog();
             this.Close();
         }

@@ -12,9 +12,9 @@ using RHSolutions.Data;
 
 namespace RHSolutions
 {
-    public partial class Form4 : Form
+    public partial class Menu : Form
     {
-        public Form4()
+        public Menu()
         {
             InitializeComponent();
         }
@@ -50,6 +50,26 @@ namespace RHSolutions
         private void SairBT_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

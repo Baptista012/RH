@@ -32,6 +32,15 @@ namespace RHSolutions.Interfaces
             this.components = new System.ComponentModel.Container();
             this.BtVoltar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txVales = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txFgts = new System.Windows.Forms.TextBox();
+            this.txInss = new System.Windows.Forms.TextBox();
+            this.txIrrf = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.GridFunc = new System.Windows.Forms.DataGridView();
             this.Total = new System.Windows.Forms.MaskedTextBox();
             this.Lpagar = new System.Windows.Forms.Label();
             this.FuncPagaBT = new System.Windows.Forms.Button();
@@ -39,32 +48,23 @@ namespace RHSolutions.Interfaces
             this.MtxtCpf = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.fUNCIONARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rHSOLUTIONSDataSet = new RHSolutions.RHSOLUTIONSDataSet();
+            this.label3 = new System.Windows.Forms.Label();
+            this.GridEmpresa = new System.Windows.Forms.DataGridView();
             this.MtxtPagaEmp = new System.Windows.Forms.MaskedTextBox();
             this.LPagaEmp = new System.Windows.Forms.Label();
             this.EmpPagaBT = new System.Windows.Forms.Button();
             this.PesquisarEmpBT = new System.Windows.Forms.Button();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.fUNCIONARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rHSOLUTIONSDataSet = new RHSolutions.RHSOLUTIONSDataSet();
             this.fUNCIONARIOTableAdapter = new RHSolutions.RHSOLUTIONSDataSetTableAdapters.FUNCIONARIOTableAdapter();
-            this.GridFunc = new System.Windows.Forms.DataGridView();
-            this.GridEmpresa = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txIrrf = new System.Windows.Forms.TextBox();
-            this.txInss = new System.Windows.Forms.TextBox();
-            this.txFgts = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txVales = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridFunc)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridEmpresa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rHSOLUTIONSDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GridFunc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GridEmpresa)).BeginInit();
             this.SuspendLayout();
             // 
             // BtVoltar
@@ -96,16 +96,88 @@ namespace RHSolutions.Interfaces
             this.groupBox1.Controls.Add(this.MtxtCpf);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.groupBox1.Location = new System.Drawing.Point(54, 85);
+            this.groupBox1.Location = new System.Drawing.Point(55, 85);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(914, 690);
+            this.groupBox1.Size = new System.Drawing.Size(619, 558);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Folha de pagamento Funcionário";
             // 
+            // txVales
+            // 
+            this.txVales.Location = new System.Drawing.Point(89, 375);
+            this.txVales.Name = "txVales";
+            this.txVales.Size = new System.Drawing.Size(303, 26);
+            this.txVales.TabIndex = 25;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(31, 378);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 20);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Vales:";
+            // 
+            // txFgts
+            // 
+            this.txFgts.Location = new System.Drawing.Point(89, 470);
+            this.txFgts.Name = "txFgts";
+            this.txFgts.Size = new System.Drawing.Size(303, 26);
+            this.txFgts.TabIndex = 23;
+            // 
+            // txInss
+            // 
+            this.txInss.Location = new System.Drawing.Point(89, 405);
+            this.txInss.Name = "txInss";
+            this.txInss.Size = new System.Drawing.Size(303, 26);
+            this.txInss.TabIndex = 22;
+            // 
+            // txIrrf
+            // 
+            this.txIrrf.Location = new System.Drawing.Point(89, 438);
+            this.txIrrf.Name = "txIrrf";
+            this.txIrrf.Size = new System.Drawing.Size(303, 26);
+            this.txIrrf.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(31, 473);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 20);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "FGTS:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(31, 441);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 20);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "IRRF:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(31, 408);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 20);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "INSS:";
+            // 
+            // GridFunc
+            // 
+            this.GridFunc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridFunc.Location = new System.Drawing.Point(10, 98);
+            this.GridFunc.Name = "GridFunc";
+            this.GridFunc.Size = new System.Drawing.Size(500, 207);
+            this.GridFunc.TabIndex = 17;
+            // 
             // Total
             // 
-            this.Total.Location = new System.Drawing.Point(157, 621);
+            this.Total.Location = new System.Drawing.Point(145, 507);
             this.Total.Mask = "$ ";
             this.Total.Name = "Total";
             this.Total.Size = new System.Drawing.Size(247, 26);
@@ -114,7 +186,7 @@ namespace RHSolutions.Interfaces
             // Lpagar
             // 
             this.Lpagar.AutoSize = true;
-            this.Lpagar.Location = new System.Drawing.Point(43, 621);
+            this.Lpagar.Location = new System.Drawing.Point(31, 507);
             this.Lpagar.Name = "Lpagar";
             this.Lpagar.Size = new System.Drawing.Size(108, 20);
             this.Lpagar.TabIndex = 15;
@@ -124,7 +196,7 @@ namespace RHSolutions.Interfaces
             // 
             this.FuncPagaBT.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FuncPagaBT.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.FuncPagaBT.Location = new System.Drawing.Point(259, 427);
+            this.FuncPagaBT.Location = new System.Drawing.Point(89, 311);
             this.FuncPagaBT.Name = "FuncPagaBT";
             this.FuncPagaBT.Size = new System.Drawing.Size(379, 41);
             this.FuncPagaBT.TabIndex = 14;
@@ -136,7 +208,7 @@ namespace RHSolutions.Interfaces
             // 
             this.PesquisarBt.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.PesquisarBt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PesquisarBt.Location = new System.Drawing.Point(447, 32);
+            this.PesquisarBt.Location = new System.Drawing.Point(240, 65);
             this.PesquisarBt.Name = "PesquisarBt";
             this.PesquisarBt.Size = new System.Drawing.Size(152, 27);
             this.PesquisarBt.TabIndex = 13;
@@ -172,22 +244,31 @@ namespace RHSolutions.Interfaces
             this.groupBox2.Controls.Add(this.maskedTextBox2);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.groupBox2.Location = new System.Drawing.Point(1034, 85);
+            this.groupBox2.Location = new System.Drawing.Point(700, 85);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(828, 690);
+            this.groupBox2.Size = new System.Drawing.Size(572, 564);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Folha de pagamento empresa";
             // 
-            // fUNCIONARIOBindingSource
+            // label3
             // 
-            this.fUNCIONARIOBindingSource.DataMember = "FUNCIONARIO";
-            this.fUNCIONARIOBindingSource.DataSource = this.rHSOLUTIONSDataSet;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(142, 295);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(579, 46);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Não ta funcionando vou arruma";
             // 
-            // rHSOLUTIONSDataSet
+            // GridEmpresa
             // 
-            this.rHSOLUTIONSDataSet.DataSetName = "RHSOLUTIONSDataSet";
-            this.rHSOLUTIONSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.GridEmpresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridEmpresa.Location = new System.Drawing.Point(29, 104);
+            this.GridEmpresa.Name = "GridEmpresa";
+            this.GridEmpresa.Size = new System.Drawing.Size(527, 201);
+            this.GridEmpresa.TabIndex = 21;
             // 
             // MtxtPagaEmp
             // 
@@ -210,7 +291,7 @@ namespace RHSolutions.Interfaces
             // 
             this.EmpPagaBT.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.EmpPagaBT.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.EmpPagaBT.Location = new System.Drawing.Point(212, 427);
+            this.EmpPagaBT.Location = new System.Drawing.Point(150, 431);
             this.EmpPagaBT.Name = "EmpPagaBT";
             this.EmpPagaBT.Size = new System.Drawing.Size(379, 41);
             this.EmpPagaBT.TabIndex = 18;
@@ -222,7 +303,7 @@ namespace RHSolutions.Interfaces
             // 
             this.PesquisarEmpBT.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.PesquisarEmpBT.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PesquisarEmpBT.Location = new System.Drawing.Point(477, 39);
+            this.PesquisarEmpBT.Location = new System.Drawing.Point(273, 71);
             this.PesquisarEmpBT.Name = "PesquisarEmpBT";
             this.PesquisarEmpBT.Size = new System.Drawing.Size(152, 27);
             this.PesquisarEmpBT.TabIndex = 16;
@@ -246,106 +327,26 @@ namespace RHSolutions.Interfaces
             this.label2.TabIndex = 14;
             this.label2.Text = "Digite o CNPJ da empresa :";
             // 
+            // fUNCIONARIOBindingSource
+            // 
+            this.fUNCIONARIOBindingSource.DataMember = "FUNCIONARIO";
+            this.fUNCIONARIOBindingSource.DataSource = this.rHSOLUTIONSDataSet;
+            // 
+            // rHSOLUTIONSDataSet
+            // 
+            this.rHSOLUTIONSDataSet.DataSetName = "RHSOLUTIONSDataSet";
+            this.rHSOLUTIONSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // fUNCIONARIOTableAdapter
             // 
             this.fUNCIONARIOTableAdapter.ClearBeforeFill = true;
-            // 
-            // GridFunc
-            // 
-            this.GridFunc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridFunc.Location = new System.Drawing.Point(28, 98);
-            this.GridFunc.Name = "GridFunc";
-            this.GridFunc.Size = new System.Drawing.Size(814, 277);
-            this.GridFunc.TabIndex = 17;
-            // 
-            // GridEmpresa
-            // 
-            this.GridEmpresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridEmpresa.Location = new System.Drawing.Point(90, 132);
-            this.GridEmpresa.Name = "GridEmpresa";
-            this.GridEmpresa.Size = new System.Drawing.Size(679, 252);
-            this.GridEmpresa.TabIndex = 21;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(142, 295);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(579, 46);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Não ta funcionando vou arruma";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(43, 522);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 20);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "INSS:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(43, 555);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 20);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "IRRF:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(43, 587);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 20);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "FGTS:";
-            // 
-            // txIrrf
-            // 
-            this.txIrrf.Location = new System.Drawing.Point(101, 552);
-            this.txIrrf.Name = "txIrrf";
-            this.txIrrf.Size = new System.Drawing.Size(303, 26);
-            this.txIrrf.TabIndex = 21;
-            // 
-            // txInss
-            // 
-            this.txInss.Location = new System.Drawing.Point(101, 519);
-            this.txInss.Name = "txInss";
-            this.txInss.Size = new System.Drawing.Size(303, 26);
-            this.txInss.TabIndex = 22;
-            // 
-            // txFgts
-            // 
-            this.txFgts.Location = new System.Drawing.Point(101, 584);
-            this.txFgts.Name = "txFgts";
-            this.txFgts.Size = new System.Drawing.Size(303, 26);
-            this.txFgts.TabIndex = 23;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(43, 492);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 20);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "Vales:";
-            // 
-            // txVales
-            // 
-            this.txVales.Location = new System.Drawing.Point(101, 489);
-            this.txVales.Name = "txVales";
-            this.txVales.Size = new System.Drawing.Size(303, 26);
-            this.txVales.TabIndex = 25;
             // 
             // telaPagamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1284, 661);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtVoltar);
@@ -354,12 +355,12 @@ namespace RHSolutions.Interfaces
             this.Load += new System.EventHandler(this.telaPagamento_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridFunc)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridEmpresa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rHSOLUTIONSDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GridFunc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GridEmpresa)).EndInit();
             this.ResumeLayout(false);
 
         }

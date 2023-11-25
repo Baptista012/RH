@@ -1,7 +1,7 @@
 ﻿
 namespace RHSolutions
 {
-    partial class Form4
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace RHSolutions
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.folhaDePagamento = new System.Windows.Forms.Button();
@@ -67,7 +67,7 @@ namespace RHSolutions
             this.label1.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(458, 36);
+            this.label1.Location = new System.Drawing.Point(195, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(866, 73);
             this.label1.TabIndex = 1;
@@ -77,9 +77,9 @@ namespace RHSolutions
             // 
             this.folhaDePagamento.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("folhaDePagamento.BackgroundImage")));
             this.folhaDePagamento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.folhaDePagamento.Location = new System.Drawing.Point(105, 299);
+            this.folhaDePagamento.Location = new System.Drawing.Point(44, 294);
             this.folhaDePagamento.Name = "folhaDePagamento";
-            this.folhaDePagamento.Size = new System.Drawing.Size(491, 501);
+            this.folhaDePagamento.Size = new System.Drawing.Size(327, 338);
             this.folhaDePagamento.TabIndex = 2;
             this.folhaDePagamento.UseVisualStyleBackColor = true;
             this.folhaDePagamento.Click += new System.EventHandler(this.folhaDePagamento_Click);
@@ -88,9 +88,9 @@ namespace RHSolutions
             // 
             this.FolhaPonto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FolhaPonto.BackgroundImage")));
             this.FolhaPonto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.FolhaPonto.Location = new System.Drawing.Point(721, 294);
+            this.FolhaPonto.Location = new System.Drawing.Point(473, 294);
             this.FolhaPonto.Name = "FolhaPonto";
-            this.FolhaPonto.Size = new System.Drawing.Size(491, 501);
+            this.FolhaPonto.Size = new System.Drawing.Size(327, 338);
             this.FolhaPonto.TabIndex = 3;
             this.FolhaPonto.UseVisualStyleBackColor = true;
             this.FolhaPonto.Click += new System.EventHandler(this.FolhaPonto_Click);
@@ -98,42 +98,45 @@ namespace RHSolutions
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.pictureBox2.Location = new System.Drawing.Point(129, 728);
+            this.pictureBox2.Location = new System.Drawing.Point(61, 599);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(435, 99);
+            this.pictureBox2.Size = new System.Drawing.Size(300, 50);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.pictureBox3.Location = new System.Drawing.Point(760, 722);
+            this.pictureBox3.Location = new System.Drawing.Point(489, 599);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(429, 100);
+            this.pictureBox3.Size = new System.Drawing.Size(300, 50);
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(176, 735);
+            this.label2.Location = new System.Drawing.Point(101, 599);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(350, 39);
+            this.label2.Size = new System.Drawing.Size(209, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Folha de pagamento";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(852, 730);
+            this.label3.Location = new System.Drawing.Point(566, 599);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(259, 39);
+            this.label3.Size = new System.Drawing.Size(156, 25);
             this.label3.TabIndex = 7;
             this.label3.Text = "Folha de ponto";
             // 
@@ -141,23 +144,24 @@ namespace RHSolutions
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(230, 776);
+            this.label4.Location = new System.Drawing.Point(108, 624);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(236, 24);
+            this.label4.Size = new System.Drawing.Size(202, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "Alterar folha de pagamento";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(885, 776);
+            this.label5.Location = new System.Drawing.Point(560, 624);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(189, 24);
+            this.label5.Size = new System.Drawing.Size(162, 20);
             this.label5.TabIndex = 9;
             this.label5.Text = "Alterar folha de ponto";
             // 
@@ -165,9 +169,9 @@ namespace RHSolutions
             // 
             this.CntrFerias.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CntrFerias.BackgroundImage")));
             this.CntrFerias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.CntrFerias.Location = new System.Drawing.Point(1322, 299);
+            this.CntrFerias.Location = new System.Drawing.Point(891, 294);
             this.CntrFerias.Name = "CntrFerias";
-            this.CntrFerias.Size = new System.Drawing.Size(491, 501);
+            this.CntrFerias.Size = new System.Drawing.Size(327, 338);
             this.CntrFerias.TabIndex = 10;
             this.CntrFerias.UseVisualStyleBackColor = true;
             this.CntrFerias.Click += new System.EventHandler(this.CntrFerias_Click);
@@ -175,9 +179,9 @@ namespace RHSolutions
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.pictureBox4.Location = new System.Drawing.Point(1356, 727);
+            this.pictureBox4.Location = new System.Drawing.Point(907, 599);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(419, 97);
+            this.pictureBox4.Size = new System.Drawing.Size(300, 50);
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
             // 
@@ -185,11 +189,11 @@ namespace RHSolutions
             // 
             this.ferias.AutoSize = true;
             this.ferias.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ferias.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold);
+            this.ferias.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.ferias.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.ferias.Location = new System.Drawing.Point(1415, 727);
+            this.ferias.Location = new System.Drawing.Point(962, 599);
             this.ferias.Name = "ferias";
-            this.ferias.Size = new System.Drawing.Size(308, 39);
+            this.ferias.Size = new System.Drawing.Size(183, 25);
             this.ferias.TabIndex = 12;
             this.ferias.Text = "Controle de férias";
             // 
@@ -197,11 +201,11 @@ namespace RHSolutions
             // 
             this.controleferias.AutoSize = true;
             this.controleferias.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.controleferias.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.controleferias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.controleferias.ForeColor = System.Drawing.Color.White;
-            this.controleferias.Location = new System.Drawing.Point(1456, 776);
+            this.controleferias.Location = new System.Drawing.Point(963, 624);
             this.controleferias.Name = "controleferias";
-            this.controleferias.Size = new System.Drawing.Size(213, 24);
+            this.controleferias.Size = new System.Drawing.Size(182, 20);
             this.controleferias.TabIndex = 13;
             this.controleferias.Text = "Alterar controle de férias";
             // 
@@ -210,7 +214,7 @@ namespace RHSolutions
             this.CadastreBT.BackColor = System.Drawing.Color.Black;
             this.CadastreBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CadastreBT.ForeColor = System.Drawing.Color.White;
-            this.CadastreBT.Location = new System.Drawing.Point(828, 181);
+            this.CadastreBT.Location = new System.Drawing.Point(506, 167);
             this.CadastreBT.Name = "CadastreBT";
             this.CadastreBT.Size = new System.Drawing.Size(283, 74);
             this.CadastreBT.TabIndex = 14;
@@ -231,12 +235,14 @@ namespace RHSolutions
             this.SairBT.UseVisualStyleBackColor = false;
             this.SairBT.Click += new System.EventHandler(this.SairBT_Click);
             // 
-            // Form4
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1284, 661);
+            this.ControlBox = false;
             this.Controls.Add(this.SairBT);
             this.Controls.Add(this.CadastreBT);
             this.Controls.Add(this.controleferias);
@@ -253,8 +259,8 @@ namespace RHSolutions
             this.Controls.Add(this.folhaDePagamento);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form4";
-            this.Text = "Form4";
+            this.Name = "Menu";
+            this.Text = "Menu";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

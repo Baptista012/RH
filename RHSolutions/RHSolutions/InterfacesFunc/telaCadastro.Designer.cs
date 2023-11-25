@@ -39,6 +39,7 @@ namespace RHSolutions
             this.TelefoneEmpresa = new System.Windows.Forms.Label();
             this.MtxTelEmp = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbxValeTrans = new System.Windows.Forms.ComboBox();
             this.mTxtCnpjFunc = new System.Windows.Forms.MaskedTextBox();
             this.mTxtCep = new System.Windows.Forms.MaskedTextBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -89,11 +90,12 @@ namespace RHSolutions
             this.label14 = new System.Windows.Forms.Label();
             this.BTexcluirEmp = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbxValeTrans = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txNomeEmp
@@ -215,12 +217,23 @@ namespace RHSolutions
             this.groupBox1.Controls.Add(this.txEmail);
             this.groupBox1.Controls.Add(this.txNome);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBox1.Location = new System.Drawing.Point(12, 95);
+            this.groupBox1.Location = new System.Drawing.Point(22, 16);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(890, 597);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro de funcionário";
+            // 
+            // cbxValeTrans
+            // 
+            this.cbxValeTrans.FormattingEnabled = true;
+            this.cbxValeTrans.Items.AddRange(new object[] {
+            "Sim",
+            "Não"});
+            this.cbxValeTrans.Location = new System.Drawing.Point(34, 317);
+            this.cbxValeTrans.Name = "cbxValeTrans";
+            this.cbxValeTrans.Size = new System.Drawing.Size(121, 24);
+            this.cbxValeTrans.TabIndex = 66;
             // 
             // mTxtCnpjFunc
             // 
@@ -551,7 +564,7 @@ namespace RHSolutions
             this.groupBox2.Controls.Add(this.CnpjEmpresa);
             this.groupBox2.Controls.Add(this.lNomeEmp);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBox2.Location = new System.Drawing.Point(940, 95);
+            this.groupBox2.Location = new System.Drawing.Point(918, 25);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(791, 444);
             this.groupBox2.TabIndex = 22;
@@ -574,9 +587,9 @@ namespace RHSolutions
             // VoltarBT
             // 
             this.VoltarBT.BackColor = System.Drawing.Color.Coral;
-            this.VoltarBT.Location = new System.Drawing.Point(22, 12);
+            this.VoltarBT.Location = new System.Drawing.Point(14, 3);
             this.VoltarBT.Name = "VoltarBT";
-            this.VoltarBT.Size = new System.Drawing.Size(124, 35);
+            this.VoltarBT.Size = new System.Drawing.Size(86, 30);
             this.VoltarBT.TabIndex = 23;
             this.VoltarBT.Text = "< Voltar";
             this.VoltarBT.UseVisualStyleBackColor = false;
@@ -588,9 +601,9 @@ namespace RHSolutions
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.MtxExcFunc);
             this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Location = new System.Drawing.Point(22, 718);
+            this.groupBox3.Location = new System.Drawing.Point(56, 619);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(880, 271);
+            this.groupBox3.Size = new System.Drawing.Size(602, 247);
             this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Exclusão de Funcionário";
@@ -600,7 +613,7 @@ namespace RHSolutions
             this.BTExcluirfunc.BackColor = System.Drawing.Color.Black;
             this.BTExcluirfunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTExcluirfunc.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BTExcluirfunc.Location = new System.Drawing.Point(226, 177);
+            this.BTExcluirfunc.Location = new System.Drawing.Point(98, 160);
             this.BTExcluirfunc.Name = "BTExcluirfunc";
             this.BTExcluirfunc.Size = new System.Drawing.Size(392, 50);
             this.BTExcluirfunc.TabIndex = 36;
@@ -612,7 +625,7 @@ namespace RHSolutions
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label13.Location = new System.Drawing.Point(271, 110);
+            this.label13.Location = new System.Drawing.Point(132, 93);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(44, 20);
             this.label13.TabIndex = 35;
@@ -620,7 +633,7 @@ namespace RHSolutions
             // 
             // MtxExcFunc
             // 
-            this.MtxExcFunc.Location = new System.Drawing.Point(275, 133);
+            this.MtxExcFunc.Location = new System.Drawing.Point(136, 116);
             this.MtxExcFunc.Mask = "000.000.000-00";
             this.MtxExcFunc.Name = "MtxExcFunc";
             this.MtxExcFunc.Size = new System.Drawing.Size(292, 20);
@@ -632,7 +645,7 @@ namespace RHSolutions
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(129, 44);
+            this.label10.Location = new System.Drawing.Point(6, 44);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(596, 31);
             this.label10.TabIndex = 11;
@@ -644,16 +657,16 @@ namespace RHSolutions
             this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Controls.Add(this.BTexcluirEmp);
             this.groupBox4.Controls.Add(this.label1);
-            this.groupBox4.Location = new System.Drawing.Point(940, 718);
+            this.groupBox4.Location = new System.Drawing.Point(920, 619);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(791, 271);
+            this.groupBox4.Size = new System.Drawing.Size(598, 222);
             this.groupBox4.TabIndex = 25;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Exclusão de empresa";
             // 
             // MtxExEmp
             // 
-            this.MtxExEmp.Location = new System.Drawing.Point(208, 137);
+            this.MtxExEmp.Location = new System.Drawing.Point(104, 125);
             this.MtxExEmp.Mask = "00.000.000/0000-00";
             this.MtxExEmp.Name = "MtxExEmp";
             this.MtxExEmp.Size = new System.Drawing.Size(319, 20);
@@ -663,7 +676,7 @@ namespace RHSolutions
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label14.Location = new System.Drawing.Point(204, 114);
+            this.label14.Location = new System.Drawing.Point(100, 102);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(133, 20);
             this.label14.TabIndex = 29;
@@ -674,7 +687,7 @@ namespace RHSolutions
             this.BTexcluirEmp.BackColor = System.Drawing.Color.Black;
             this.BTexcluirEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTexcluirEmp.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BTexcluirEmp.Location = new System.Drawing.Point(195, 177);
+            this.BTexcluirEmp.Location = new System.Drawing.Point(91, 165);
             this.BTexcluirEmp.Name = "BTexcluirEmp";
             this.BTexcluirEmp.Size = new System.Drawing.Size(392, 50);
             this.BTexcluirEmp.TabIndex = 27;
@@ -688,34 +701,33 @@ namespace RHSolutions
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(112, 44);
+            this.label1.Location = new System.Drawing.Point(9, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(578, 31);
             this.label1.TabIndex = 10;
             this.label1.Text = "Digite o Cnpj da empresa que será excluida";
             // 
-            // cbxValeTrans
+            // panel1
             // 
-            this.cbxValeTrans.FormattingEnabled = true;
-            this.cbxValeTrans.Items.AddRange(new object[] {
-            "Sim",
-            "Não"});
-            this.cbxValeTrans.Location = new System.Drawing.Point(34, 317);
-            this.cbxValeTrans.Name = "cbxValeTrans";
-            this.cbxValeTrans.Size = new System.Drawing.Size(121, 24);
-            this.cbxValeTrans.TabIndex = 66;
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Controls.Add(this.groupBox4);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Location = new System.Drawing.Point(14, 42);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1273, 617);
+            this.panel1.TabIndex = 26;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
+            this.ClientSize = new System.Drawing.Size(1284, 661);
+            this.ControlBox = false;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.VoltarBT);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form3";
             this.Text = "Tela de cadastro";
@@ -727,6 +739,7 @@ namespace RHSolutions
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -794,5 +807,6 @@ namespace RHSolutions
         private System.Windows.Forms.MaskedTextBox mTxtCnpjFunc;
         private System.Windows.Forms.MaskedTextBox mTxtCep;
         private System.Windows.Forms.ComboBox cbxValeTrans;
+        private System.Windows.Forms.Panel panel1;
     }
 }
