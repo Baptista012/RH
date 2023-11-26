@@ -234,6 +234,7 @@ namespace RHSolutions
             this.cbxValeTrans.Name = "cbxValeTrans";
             this.cbxValeTrans.Size = new System.Drawing.Size(121, 24);
             this.cbxValeTrans.TabIndex = 66;
+            this.cbxValeTrans.Text = "Selecione";
             // 
             // mTxtCnpjFunc
             // 

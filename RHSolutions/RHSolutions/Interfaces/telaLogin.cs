@@ -45,24 +45,29 @@ namespace RHSolutions
                     
 
                 }
+                if(TxtFuncional.Text.Substring(0, 3) == "033"){
+                    string query = $"SELECT Funcional, Senha FROM FUNCIONARIO WHERE Funcional = '{loginModel.Funcional}' AND Senha = '{loginModel.Senha}'";
+                    SqlCommand command = new SqlCommand(query, conexaoDB);
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (!reader.Read())
+                    {
 
-                string query = $"SELECT Funcional, Senha FROM FUNCIONARIO WHERE Funcional = '{loginModel.Funcional}' AND Senha = '{loginModel.Senha}'";
-                SqlCommand command = new SqlCommand(query, conexaoDB);
-                SqlDataReader reader = command.ExecuteReader();
-                if (!reader.Read())
-                {
+                        MessageBox.Show("Não foi possivel fazer o login funcional ou senha incorretos");
 
-                    MessageBox.Show("Não foi possivel fazer o login funcional ou senha incorretos");
-                   
 
+                    }
+                    else
+                    {
+
+                        loginModel.Funcional = reader.GetString(0);
+                        this.Close();
+                        Menu Menu = new Menu();
+                        Menu.ShowDialog();
+                    }
                 }
                 else
                 {
-
-                    loginModel.Funcional = reader.GetString(0);
-                    this.Close();
-                    Menu Menu = new Menu();
-                    Menu.ShowDialog();
+                    MessageBox.Show("Para acessar o programa você precisa fazer parte da equipe de RH");
                 }
             }
             catch (Exception ex)

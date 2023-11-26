@@ -150,5 +150,6 @@ namespace RHSolutions.Controladores
             x = (x * 8) / 100;
             return x;
         }
+
     }
 }

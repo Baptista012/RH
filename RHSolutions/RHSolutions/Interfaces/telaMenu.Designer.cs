@@ -227,9 +227,9 @@ namespace RHSolutions
             this.SairBT.BackColor = System.Drawing.Color.Red;
             this.SairBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.SairBT.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.SairBT.Location = new System.Drawing.Point(1563, 938);
+            this.SairBT.Location = new System.Drawing.Point(0, 152);
             this.SairBT.Name = "SairBT";
-            this.SairBT.Size = new System.Drawing.Size(329, 79);
+            this.SairBT.Size = new System.Drawing.Size(131, 53);
             this.SairBT.TabIndex = 15;
             this.SairBT.Text = "Fechar";
             this.SairBT.UseVisualStyleBackColor = false;
@@ -239,7 +239,6 @@ namespace RHSolutions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(1284, 661);
             this.ControlBox = false;

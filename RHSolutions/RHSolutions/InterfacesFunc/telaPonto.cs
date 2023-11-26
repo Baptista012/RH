@@ -53,6 +53,7 @@ namespace RHSolutions.Interfaces
                             GridPonto.DataSource = dt;
                         }
                     }
+                    conexaoDB.Close();
                 }
             }
             catch (Exception ex)

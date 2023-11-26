@@ -32,6 +32,7 @@ namespace RHSolutions.Interfaces
             this.components = new System.ComponentModel.Container();
             this.BtVoltar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txTotal = new System.Windows.Forms.TextBox();
             this.txVales = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txFgts = new System.Windows.Forms.TextBox();
@@ -41,24 +42,26 @@ namespace RHSolutions.Interfaces
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.GridFunc = new System.Windows.Forms.DataGridView();
-            this.Total = new System.Windows.Forms.MaskedTextBox();
             this.Lpagar = new System.Windows.Forms.Label();
             this.FuncPagaBT = new System.Windows.Forms.Button();
             this.PesquisarBt = new System.Windows.Forms.Button();
             this.MtxtCpf = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.GridEmpresa = new System.Windows.Forms.DataGridView();
             this.MtxtPagaEmp = new System.Windows.Forms.MaskedTextBox();
             this.LPagaEmp = new System.Windows.Forms.Label();
             this.EmpPagaBT = new System.Windows.Forms.Button();
             this.PesquisarEmpBT = new System.Windows.Forms.Button();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.mtxCnpj = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.fUNCIONARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rHSOLUTIONSDataSet = new RHSolutions.RHSOLUTIONSDataSet();
             this.fUNCIONARIOTableAdapter = new RHSolutions.RHSOLUTIONSDataSetTableAdapters.FUNCIONARIOTableAdapter();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txNFunc = new System.Windows.Forms.TextBox();
+            this.txTotalEmp = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridFunc)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -80,6 +83,7 @@ namespace RHSolutions.Interfaces
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txTotal);
             this.groupBox1.Controls.Add(this.txVales);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txFgts);
@@ -89,7 +93,6 @@ namespace RHSolutions.Interfaces
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.GridFunc);
-            this.groupBox1.Controls.Add(this.Total);
             this.groupBox1.Controls.Add(this.Lpagar);
             this.groupBox1.Controls.Add(this.FuncPagaBT);
             this.groupBox1.Controls.Add(this.PesquisarBt);
@@ -102,6 +105,13 @@ namespace RHSolutions.Interfaces
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Folha de pagamento Funcionário";
+            // 
+            // txTotal
+            // 
+            this.txTotal.Location = new System.Drawing.Point(145, 507);
+            this.txTotal.Name = "txTotal";
+            this.txTotal.Size = new System.Drawing.Size(247, 26);
+            this.txTotal.TabIndex = 26;
             // 
             // txVales
             // 
@@ -175,14 +185,6 @@ namespace RHSolutions.Interfaces
             this.GridFunc.Size = new System.Drawing.Size(500, 207);
             this.GridFunc.TabIndex = 17;
             // 
-            // Total
-            // 
-            this.Total.Location = new System.Drawing.Point(145, 507);
-            this.Total.Mask = "$ ";
-            this.Total.Name = "Total";
-            this.Total.Size = new System.Drawing.Size(247, 26);
-            this.Total.TabIndex = 16;
-            // 
             // Lpagar
             // 
             this.Lpagar.AutoSize = true;
@@ -235,13 +237,16 @@ namespace RHSolutions.Interfaces
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txTotalEmp);
+            this.groupBox2.Controls.Add(this.txNFunc);
+            this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.GridEmpresa);
             this.groupBox2.Controls.Add(this.MtxtPagaEmp);
             this.groupBox2.Controls.Add(this.LPagaEmp);
             this.groupBox2.Controls.Add(this.EmpPagaBT);
             this.groupBox2.Controls.Add(this.PesquisarEmpBT);
-            this.groupBox2.Controls.Add(this.maskedTextBox2);
+            this.groupBox2.Controls.Add(this.mtxCnpj);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.groupBox2.Location = new System.Drawing.Point(700, 85);
@@ -250,17 +255,6 @@ namespace RHSolutions.Interfaces
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Folha de pagamento empresa";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(142, 295);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(579, 46);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Não ta funcionando vou arruma";
             // 
             // GridEmpresa
             // 
@@ -291,7 +285,7 @@ namespace RHSolutions.Interfaces
             // 
             this.EmpPagaBT.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.EmpPagaBT.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.EmpPagaBT.Location = new System.Drawing.Point(150, 431);
+            this.EmpPagaBT.Location = new System.Drawing.Point(125, 311);
             this.EmpPagaBT.Name = "EmpPagaBT";
             this.EmpPagaBT.Size = new System.Drawing.Size(379, 41);
             this.EmpPagaBT.TabIndex = 18;
@@ -309,14 +303,15 @@ namespace RHSolutions.Interfaces
             this.PesquisarEmpBT.TabIndex = 16;
             this.PesquisarEmpBT.Text = "Pesquisar";
             this.PesquisarEmpBT.UseVisualStyleBackColor = false;
+            this.PesquisarEmpBT.Click += new System.EventHandler(this.PesquisarEmpBT_Click);
             // 
-            // maskedTextBox2
+            // mtxCnpj
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(246, 39);
-            this.maskedTextBox2.Mask = "00.000.000.0000-00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(206, 26);
-            this.maskedTextBox2.TabIndex = 15;
+            this.mtxCnpj.Location = new System.Drawing.Point(246, 39);
+            this.mtxCnpj.Mask = "00.000.000.0000-00";
+            this.mtxCnpj.Name = "mtxCnpj";
+            this.mtxCnpj.Size = new System.Drawing.Size(206, 26);
+            this.mtxCnpj.TabIndex = 15;
             // 
             // label2
             // 
@@ -340,6 +335,38 @@ namespace RHSolutions.Interfaces
             // fUNCIONARIOTableAdapter
             // 
             this.fUNCIONARIOTableAdapter.ClearBeforeFill = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(25, 378);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 20);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Funcionários:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(25, 408);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(85, 20);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Valor total:";
+            // 
+            // txNFunc
+            // 
+            this.txNFunc.Location = new System.Drawing.Point(135, 375);
+            this.txNFunc.Name = "txNFunc";
+            this.txNFunc.Size = new System.Drawing.Size(131, 26);
+            this.txNFunc.TabIndex = 24;
+            // 
+            // txTotalEmp
+            // 
+            this.txTotalEmp.Location = new System.Drawing.Point(135, 405);
+            this.txTotalEmp.Name = "txTotalEmp";
+            this.txTotalEmp.Size = new System.Drawing.Size(131, 26);
+            this.txTotalEmp.TabIndex = 25;
             // 
             // telaPagamento
             // 
@@ -371,13 +398,12 @@ namespace RHSolutions.Interfaces
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox MtxtCpf;
-        private System.Windows.Forms.MaskedTextBox Total;
         private System.Windows.Forms.Label Lpagar;
         private System.Windows.Forms.Button FuncPagaBT;
         private System.Windows.Forms.Button PesquisarBt;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button PesquisarEmpBT;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox mtxCnpj;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button EmpPagaBT;
         private System.Windows.Forms.MaskedTextBox MtxtPagaEmp;
@@ -392,9 +418,13 @@ namespace RHSolutions.Interfaces
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView GridEmpresa;
         private System.Windows.Forms.TextBox txVales;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txTotal;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txTotalEmp;
+        private System.Windows.Forms.TextBox txNFunc;
+        private System.Windows.Forms.Label label8;
     }
 }

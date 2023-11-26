@@ -59,6 +59,7 @@ namespace RHSolutions.Interfaces
                             GridFerias.DataSource = dt;
                         }
                     }
+                    conexaoDB.Close();
                 }
             }
             catch(Exception ex)
