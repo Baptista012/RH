@@ -80,11 +80,11 @@ namespace RHSolutions.Controladores
                 else if (x >= 3857 && x <= 7507.49)
                 {
                     funcionarioPag.PorInss = "14%";
-                    x -= 3650.55;
+                    x -= 3856.94;
                     x = (x * 14) / 100;
                     x += 99;
                     x += 112.62;
-                    x += 511.07;
+                    x += 154.28;
                     return x;
                 }
                 else if (x > 7507.49)
