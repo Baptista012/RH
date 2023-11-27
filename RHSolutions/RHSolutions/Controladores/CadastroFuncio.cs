@@ -63,8 +63,7 @@ namespace RHSolutions.Controladores
                     End.Parameters.AddWithValue("@Numero", _funcionarioData.Numero);
                     End.Parameters.AddWithValue("@Cidade", _funcionarioData.Cidade);
                     End.Parameters.AddWithValue("@Cpf", _funcionarioData.CpfFunc);
-                    End.Parameters.AddWithValue("@Cep", _funcionarioData.Cep);
-                    End.ExecuteNonQuery();
+                    End.Parameters.AddWithValue("@Cep", _funcionarioData.Cep);                   
                     if (End.ExecuteNonQuery() > 0)
                     {
                         conexaoDB.Close();

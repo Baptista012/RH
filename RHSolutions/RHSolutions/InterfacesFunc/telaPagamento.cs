@@ -89,7 +89,7 @@ namespace RHSolutions.Interfaces
                 funcionarioPag.Salario = funcionarioPag.Salario - funcionarioPag.Inss;
                 funcionarioPag.Irrf = PagFuncionario.ResIrrf(funcionarioPag);
                 funcionarioPag.Fgts = PagFuncionario.ResFgts(funcionarioPag);
-                double total = (funcionarioPag.Salario - /*funcionarioPag.Vales */ funcionarioPag.Irrf - funcionarioPag.Fgts);
+                double total = (funcionarioPag.Salario - /*funcionarioPag.Vales */ funcionarioPag.Irrf );
                 txVales.Text = Convert.ToString(funcionarioPag.Vales);
                 txInss.Text = ($"Com: {funcionarioPag.PorInss} , O total é: R$" +funcionarioPag.Inss.ToString("F2", CultureInfo.InvariantCulture));
                 txIrrf.Text = ($"Com: {funcionarioPag.PorIrrf} , O total é: R$" +funcionarioPag.Irrf.ToString("F2", CultureInfo.InvariantCulture));

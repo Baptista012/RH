@@ -564,9 +564,9 @@ namespace RHSolutions
             this.groupBox2.Controls.Add(this.CnpjEmpresa);
             this.groupBox2.Controls.Add(this.lNomeEmp);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBox2.Location = new System.Drawing.Point(918, 25);
+            this.groupBox2.Location = new System.Drawing.Point(918, 16);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(791, 588);
+            this.groupBox2.Size = new System.Drawing.Size(791, 597);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cadastro de empresa";
