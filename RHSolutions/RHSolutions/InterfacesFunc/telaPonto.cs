@@ -24,11 +24,6 @@ namespace RHSolutions.Interfaces
          
         }
 
-        private void MtxtCpf_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
         private void BtVoltar_Click(object sender, EventArgs e)
         {
             Menu Menu = new Menu();

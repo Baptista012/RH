@@ -45,7 +45,6 @@ namespace RHSolutions.Interfaces
             this.MtxtCpf.Name = "MtxtCpf";
             this.MtxtCpf.Size = new System.Drawing.Size(206, 20);
             this.MtxtCpf.TabIndex = 4;
-            this.MtxtCpf.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.MtxtCpf_MaskInputRejected);
             // 
             // label1
             // 

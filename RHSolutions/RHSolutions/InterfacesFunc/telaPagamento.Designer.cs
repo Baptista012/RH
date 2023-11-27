@@ -47,27 +47,27 @@ namespace RHSolutions.Interfaces
             this.PesquisarBt = new System.Windows.Forms.Button();
             this.MtxtCpf = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.GridEmpresa = new System.Windows.Forms.DataGridView();
-            this.MtxtPagaEmp = new System.Windows.Forms.MaskedTextBox();
-            this.LPagaEmp = new System.Windows.Forms.Label();
-            this.EmpPagaBT = new System.Windows.Forms.Button();
-            this.PesquisarEmpBT = new System.Windows.Forms.Button();
-            this.mtxCnpj = new System.Windows.Forms.MaskedTextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.fUNCIONARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rHSOLUTIONSDataSet = new RHSolutions.RHSOLUTIONSDataSet();
             this.fUNCIONARIOTableAdapter = new RHSolutions.RHSOLUTIONSDataSetTableAdapters.FUNCIONARIOTableAdapter();
+            this.label2 = new System.Windows.Forms.Label();
+            this.mtxCnpj = new System.Windows.Forms.MaskedTextBox();
+            this.PesquisarEmpBT = new System.Windows.Forms.Button();
+            this.EmpPagaBT = new System.Windows.Forms.Button();
+            this.LPagaEmp = new System.Windows.Forms.Label();
+            this.MtxtPagaEmp = new System.Windows.Forms.MaskedTextBox();
+            this.GridEmpresa = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txNFunc = new System.Windows.Forms.TextBox();
             this.txTotalEmp = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridFunc)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GridEmpresa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rHSOLUTIONSDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridEmpresa)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtVoltar
@@ -235,93 +235,6 @@ namespace RHSolutions.Interfaces
             this.label1.TabIndex = 3;
             this.label1.Text = "Digite o Cpf do funcionário :";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txTotalEmp);
-            this.groupBox2.Controls.Add(this.txNFunc);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.GridEmpresa);
-            this.groupBox2.Controls.Add(this.MtxtPagaEmp);
-            this.groupBox2.Controls.Add(this.LPagaEmp);
-            this.groupBox2.Controls.Add(this.EmpPagaBT);
-            this.groupBox2.Controls.Add(this.PesquisarEmpBT);
-            this.groupBox2.Controls.Add(this.mtxCnpj);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.groupBox2.Location = new System.Drawing.Point(700, 85);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(572, 564);
-            this.groupBox2.TabIndex = 14;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Folha de pagamento empresa";
-            // 
-            // GridEmpresa
-            // 
-            this.GridEmpresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridEmpresa.Location = new System.Drawing.Point(29, 104);
-            this.GridEmpresa.Name = "GridEmpresa";
-            this.GridEmpresa.Size = new System.Drawing.Size(527, 201);
-            this.GridEmpresa.TabIndex = 21;
-            // 
-            // MtxtPagaEmp
-            // 
-            this.MtxtPagaEmp.Location = new System.Drawing.Point(150, 624);
-            this.MtxtPagaEmp.Mask = "$ ";
-            this.MtxtPagaEmp.Name = "MtxtPagaEmp";
-            this.MtxtPagaEmp.Size = new System.Drawing.Size(247, 26);
-            this.MtxtPagaEmp.TabIndex = 20;
-            // 
-            // LPagaEmp
-            // 
-            this.LPagaEmp.AutoSize = true;
-            this.LPagaEmp.Location = new System.Drawing.Point(36, 627);
-            this.LPagaEmp.Name = "LPagaEmp";
-            this.LPagaEmp.Size = new System.Drawing.Size(108, 20);
-            this.LPagaEmp.TabIndex = 19;
-            this.LPagaEmp.Text = "Valor a pagar:";
-            // 
-            // EmpPagaBT
-            // 
-            this.EmpPagaBT.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.EmpPagaBT.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.EmpPagaBT.Location = new System.Drawing.Point(125, 311);
-            this.EmpPagaBT.Name = "EmpPagaBT";
-            this.EmpPagaBT.Size = new System.Drawing.Size(379, 41);
-            this.EmpPagaBT.TabIndex = 18;
-            this.EmpPagaBT.Text = "Gerar informações de pagamento empresa";
-            this.EmpPagaBT.UseVisualStyleBackColor = false;
-            this.EmpPagaBT.Click += new System.EventHandler(this.EmpPagaBT_Click);
-            // 
-            // PesquisarEmpBT
-            // 
-            this.PesquisarEmpBT.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PesquisarEmpBT.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PesquisarEmpBT.Location = new System.Drawing.Point(273, 71);
-            this.PesquisarEmpBT.Name = "PesquisarEmpBT";
-            this.PesquisarEmpBT.Size = new System.Drawing.Size(152, 27);
-            this.PesquisarEmpBT.TabIndex = 16;
-            this.PesquisarEmpBT.Text = "Pesquisar";
-            this.PesquisarEmpBT.UseVisualStyleBackColor = false;
-            this.PesquisarEmpBT.Click += new System.EventHandler(this.PesquisarEmpBT_Click);
-            // 
-            // mtxCnpj
-            // 
-            this.mtxCnpj.Location = new System.Drawing.Point(246, 39);
-            this.mtxCnpj.Mask = "00.000.000.0000-00";
-            this.mtxCnpj.Name = "mtxCnpj";
-            this.mtxCnpj.Size = new System.Drawing.Size(206, 26);
-            this.mtxCnpj.TabIndex = 15;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 20);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Digite o CNPJ da empresa :";
-            // 
             // fUNCIONARIOBindingSource
             // 
             this.fUNCIONARIOBindingSource.DataMember = "FUNCIONARIO";
@@ -335,6 +248,72 @@ namespace RHSolutions.Interfaces
             // fUNCIONARIOTableAdapter
             // 
             this.fUNCIONARIOTableAdapter.ClearBeforeFill = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(36, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(203, 20);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Digite o CNPJ da empresa :";
+            // 
+            // mtxCnpj
+            // 
+            this.mtxCnpj.Location = new System.Drawing.Point(246, 39);
+            this.mtxCnpj.Mask = "00.000.000/0000-00";
+            this.mtxCnpj.Name = "mtxCnpj";
+            this.mtxCnpj.Size = new System.Drawing.Size(206, 26);
+            this.mtxCnpj.TabIndex = 15;
+            // 
+            // PesquisarEmpBT
+            // 
+            this.PesquisarEmpBT.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.PesquisarEmpBT.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.PesquisarEmpBT.Location = new System.Drawing.Point(273, 71);
+            this.PesquisarEmpBT.Name = "PesquisarEmpBT";
+            this.PesquisarEmpBT.Size = new System.Drawing.Size(152, 27);
+            this.PesquisarEmpBT.TabIndex = 16;
+            this.PesquisarEmpBT.Text = "Pesquisar";
+            this.PesquisarEmpBT.UseVisualStyleBackColor = false;
+            this.PesquisarEmpBT.Click += new System.EventHandler(this.PesquisarEmpBT_Click);
+            // 
+            // EmpPagaBT
+            // 
+            this.EmpPagaBT.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.EmpPagaBT.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.EmpPagaBT.Location = new System.Drawing.Point(125, 311);
+            this.EmpPagaBT.Name = "EmpPagaBT";
+            this.EmpPagaBT.Size = new System.Drawing.Size(379, 41);
+            this.EmpPagaBT.TabIndex = 18;
+            this.EmpPagaBT.Text = "Gerar informações de pagamento empresa";
+            this.EmpPagaBT.UseVisualStyleBackColor = false;
+            this.EmpPagaBT.Click += new System.EventHandler(this.EmpPagaBT_Click);
+            // 
+            // LPagaEmp
+            // 
+            this.LPagaEmp.AutoSize = true;
+            this.LPagaEmp.Location = new System.Drawing.Point(36, 627);
+            this.LPagaEmp.Name = "LPagaEmp";
+            this.LPagaEmp.Size = new System.Drawing.Size(108, 20);
+            this.LPagaEmp.TabIndex = 19;
+            this.LPagaEmp.Text = "Valor a pagar:";
+            // 
+            // MtxtPagaEmp
+            // 
+            this.MtxtPagaEmp.Location = new System.Drawing.Point(150, 624);
+            this.MtxtPagaEmp.Mask = "$ ";
+            this.MtxtPagaEmp.Name = "MtxtPagaEmp";
+            this.MtxtPagaEmp.Size = new System.Drawing.Size(247, 26);
+            this.MtxtPagaEmp.TabIndex = 20;
+            // 
+            // GridEmpresa
+            // 
+            this.GridEmpresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridEmpresa.Location = new System.Drawing.Point(29, 104);
+            this.GridEmpresa.Name = "GridEmpresa";
+            this.GridEmpresa.Size = new System.Drawing.Size(527, 201);
+            this.GridEmpresa.TabIndex = 21;
             // 
             // label3
             // 
@@ -358,15 +337,36 @@ namespace RHSolutions.Interfaces
             // 
             this.txNFunc.Location = new System.Drawing.Point(135, 375);
             this.txNFunc.Name = "txNFunc";
-            this.txNFunc.Size = new System.Drawing.Size(131, 26);
+            this.txNFunc.Size = new System.Drawing.Size(262, 26);
             this.txNFunc.TabIndex = 24;
             // 
             // txTotalEmp
             // 
             this.txTotalEmp.Location = new System.Drawing.Point(135, 405);
             this.txTotalEmp.Name = "txTotalEmp";
-            this.txTotalEmp.Size = new System.Drawing.Size(131, 26);
+            this.txTotalEmp.Size = new System.Drawing.Size(262, 26);
             this.txTotalEmp.TabIndex = 25;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txTotalEmp);
+            this.groupBox2.Controls.Add(this.txNFunc);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.GridEmpresa);
+            this.groupBox2.Controls.Add(this.MtxtPagaEmp);
+            this.groupBox2.Controls.Add(this.LPagaEmp);
+            this.groupBox2.Controls.Add(this.EmpPagaBT);
+            this.groupBox2.Controls.Add(this.PesquisarEmpBT);
+            this.groupBox2.Controls.Add(this.mtxCnpj);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.groupBox2.Location = new System.Drawing.Point(700, 85);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(572, 564);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Folha de pagamento empresa";
             // 
             // telaPagamento
             // 
@@ -383,11 +383,11 @@ namespace RHSolutions.Interfaces
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridFunc)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GridEmpresa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rHSOLUTIONSDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridEmpresa)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -401,13 +401,6 @@ namespace RHSolutions.Interfaces
         private System.Windows.Forms.Label Lpagar;
         private System.Windows.Forms.Button FuncPagaBT;
         private System.Windows.Forms.Button PesquisarBt;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button PesquisarEmpBT;
-        private System.Windows.Forms.MaskedTextBox mtxCnpj;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button EmpPagaBT;
-        private System.Windows.Forms.MaskedTextBox MtxtPagaEmp;
-        private System.Windows.Forms.Label LPagaEmp;
         private RHSOLUTIONSDataSet rHSOLUTIONSDataSet;
         private System.Windows.Forms.BindingSource fUNCIONARIOBindingSource;
         private RHSOLUTIONSDataSetTableAdapters.FUNCIONARIOTableAdapter fUNCIONARIOTableAdapter;
@@ -418,13 +411,20 @@ namespace RHSolutions.Interfaces
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView GridEmpresa;
         private System.Windows.Forms.TextBox txVales;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txTotal;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.MaskedTextBox mtxCnpj;
+        private System.Windows.Forms.Button PesquisarEmpBT;
+        private System.Windows.Forms.Button EmpPagaBT;
+        private System.Windows.Forms.Label LPagaEmp;
+        private System.Windows.Forms.MaskedTextBox MtxtPagaEmp;
+        private System.Windows.Forms.DataGridView GridEmpresa;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txTotalEmp;
-        private System.Windows.Forms.TextBox txNFunc;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txNFunc;
+        private System.Windows.Forms.TextBox txTotalEmp;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

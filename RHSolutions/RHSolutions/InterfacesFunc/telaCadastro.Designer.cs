@@ -550,7 +550,6 @@ namespace RHSolutions
             this.txNome.Name = "txNome";
             this.txNome.Size = new System.Drawing.Size(360, 23);
             this.txNome.TabIndex = 21;
-            this.txNome.TextChanged += new System.EventHandler(this.txNome_TextChanged);
             // 
             // groupBox2
             // 
@@ -567,7 +566,7 @@ namespace RHSolutions
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBox2.Location = new System.Drawing.Point(918, 25);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(791, 444);
+            this.groupBox2.Size = new System.Drawing.Size(791, 588);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cadastro de empresa";
@@ -602,9 +601,9 @@ namespace RHSolutions
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.MtxExcFunc);
             this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Location = new System.Drawing.Point(56, 619);
+            this.groupBox3.Location = new System.Drawing.Point(22, 619);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(602, 247);
+            this.groupBox3.Size = new System.Drawing.Size(890, 247);
             this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Exclusão de Funcionário";
@@ -660,7 +659,7 @@ namespace RHSolutions
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Location = new System.Drawing.Point(920, 619);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(598, 222);
+            this.groupBox4.Size = new System.Drawing.Size(791, 244);
             this.groupBox4.TabIndex = 25;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Exclusão de empresa";

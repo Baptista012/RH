@@ -28,21 +28,14 @@ namespace RHSolutions.Interfaces
             this.Close();
         }
 
-        private void MtxtCpf_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
+    
         private void telaPagamento_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'rHSOLUTIONSDataSet.FUNCIONARIO'. Você pode movê-la ou removê-la conforme necessário.           
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+       
 
         private void EmpPagaBT_Click(object sender, EventArgs e)
         {
@@ -51,41 +44,37 @@ namespace RHSolutions.Interfaces
                 using (SqlConnection conexaoDB = new SqlConnection(SQLConect.conexaoSql))
                 {
                     conexaoDB.Open();
+                    var busca = mtxCnpj.Text.Replace(",", ".");
+                    var sqlQuery = $"SELECT a.Cpf, a.SalarioFunc, b.CnpjEmpresa FROM FUNCIONARIO as a INNER JOIN EMPRESA as b ON a.Cpf = b.CpfFuncionario WHERE CnpjEmpresa = '{busca}'";
 
-                    string query = "SELECT DISTINCT a.Cpf, a.SalarioFunc, b.CnpjEmpresa " +
-                                   "FROM FUNCIONARIO as a " +
-                                   "INNER JOIN EMPRESA as b ON a.Cpf = b.CpfFuncionario " +
-                                   "WHERE CnpjEmpresa = @CnpjEmpresa";
-
-                    using (SqlCommand command = new SqlCommand(query, conexaoDB))
+                    using (SqlCommand command = new SqlCommand(sqlQuery, conexaoDB))
                     {
-                        command.Parameters.AddWithValue("@CnpjEmpresa", mtxCnpj.Text.Replace(",", "."));
+                        DataTable dataTable = new DataTable();
 
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            int totalPessoas = 0;
-                            decimal totalSalarios = 0;
-
-                            while (reader.Read())
-                            {
-                                totalPessoas++;
-
-                                // Adiciona o salário ao total
-                                totalSalarios += Convert.ToDecimal(reader["SalarioFunc"]);
-                            }
-
-                            // Exibe os resultados
-                            txNFunc.Text = $"Total de Pessoas: {totalPessoas}";
-                            txTotalEmp.Text = $"Total de Salários: {totalSalarios:C}";
+                            dataTable.Load(reader);
                         }
+
+                        // Bind the DataTable to the DataGridView
+                        GridEmpresa.DataSource = dataTable;
+
+                        int totalPessoas = dataTable.Rows.Count;
+                        decimal totalSalarios = dataTable.AsEnumerable().Sum(row => Convert.ToDecimal(row["SalarioFunc"]));
+
+                        // Exibe os resultados
+                        txNFunc.Text = $"Total de Pessoas: {totalPessoas}";
+                        txTotalEmp.Text = $"Total de Salários: {totalSalarios:C}";
                     }
+
                     conexaoDB.Close();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ocorreu um erro: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Ocorreu um erro: {ex.Message}", "Erro");
             }
+
         }
 
         private void FuncPagaBT_Click(object sender, EventArgs e)
@@ -100,7 +89,7 @@ namespace RHSolutions.Interfaces
                 funcionarioPag.Salario = funcionarioPag.Salario - funcionarioPag.Inss;
                 funcionarioPag.Irrf = PagFuncionario.ResIrrf(funcionarioPag);
                 funcionarioPag.Fgts = PagFuncionario.ResFgts(funcionarioPag);
-                double total = (funcionarioPag.Salario - funcionarioPag.Vales - funcionarioPag.Irrf - funcionarioPag.Fgts);
+                double total = (funcionarioPag.Salario - /*funcionarioPag.Vales */ funcionarioPag.Irrf - funcionarioPag.Fgts);
                 txVales.Text = Convert.ToString(funcionarioPag.Vales);
                 txInss.Text = ($"Com: {funcionarioPag.PorInss} , O total é: R$" +funcionarioPag.Inss.ToString("F2", CultureInfo.InvariantCulture));
                 txIrrf.Text = ($"Com: {funcionarioPag.PorIrrf} , O total é: R$" +funcionarioPag.Irrf.ToString("F2", CultureInfo.InvariantCulture));
@@ -148,13 +137,21 @@ namespace RHSolutions.Interfaces
                 {
                     conexaoDB.Open();
                     var busca = mtxCnpj.Text.Replace(",", ".");
-                    var sqlQuery = $"SELECT a.Nome, a.Cpf, a.SalarioFunc, b.NomeEmpresa, b.CnpjEmpresa from FUNCIONARIO as a inner join EMPRESA as b on  a.Cpf = b.CpfFuncionario where CnpjEmpresa = '{busca}'";
+                    var sqlQuery = $"SELECT a.Cpf, a.SalarioFunc, b.CnpjEmpresa FROM FUNCIONARIO as a INNER JOIN EMPRESA as b ON a.Cpf = b.CpfFuncionario WHERE CnpjEmpresa = '{busca}'";
                     using (SqlDataAdapter da = new SqlDataAdapter(sqlQuery, conexaoDB))
                     {
                         using (DataTable dt = new DataTable())
                         {
                             da.Fill(dt);
-                            GridEmpresa.DataSource = dt;
+
+                            if (dt.Rows.Count > 0)
+                            {
+                                GridEmpresa.DataSource = dt;
+                            }
+                            else
+                            {
+                                MessageBox.Show("No data found.");
+                            }
                         }
                     }
                     conexaoDB.Close();

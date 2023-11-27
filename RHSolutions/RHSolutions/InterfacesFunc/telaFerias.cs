@@ -25,10 +25,7 @@ namespace RHSolutions.Interfaces
 
         }
 
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
-        }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -37,10 +34,7 @@ namespace RHSolutions.Interfaces
             this.Close();
         }
 
-        private void dataViewFerias_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+       
        
         private void PesquisarBt_Click(object sender, EventArgs e)
         {      

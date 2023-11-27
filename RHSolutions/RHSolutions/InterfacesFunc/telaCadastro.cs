@@ -25,11 +25,6 @@ namespace RHSolutions
             this.Close();
         }
 
-        private void txNome_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void CadastrarBT_Click_1(object sender, EventArgs e)
         {
             FuncionarioData _funcionarioData = new FuncionarioData();
@@ -150,7 +145,5 @@ namespace RHSolutions
                 MessageBox.Show("Erro: " + ex.Message);
             }
         }
-
-       
     }
 }
