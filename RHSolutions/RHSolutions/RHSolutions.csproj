@@ -50,7 +50,6 @@
     <Compile Include="Controladores\CadastroFuncio.cs" />
     <Compile Include="Controladores\LoginControl.cs" />
     <Compile Include="Controladores\PagamentoControl.cs" />
-    <Compile Include="Controladores\PontoControl.cs" />
     <Compile Include="Controladores\SQLConect.cs" />
     <Compile Include="Data\EmpresaData.cs" />
     <Compile Include="Data\FuncionarioData.cs" />

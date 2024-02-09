@@ -18,9 +18,7 @@ namespace RHSolutions.Controladores
             try
             {
                 conexaoDB.Open();
-                /* string query = "INSERT INTO[dbo].[EMPRESA] (NomeEmpresa, CnpjEmpresa, EnderEmpresa, TelefoneEmpresa)"
-                     +$" VALUES('{_empresaData.NomeEmpresa}', '{_empresaData.CnpjEmpresa}', '{_empresaData.EnderEmpresa}', '{_empresaData.TelefoneEmpresa}') ";
-                */
+               
                 string query = "INSERT INTO[dbo].[EMPRESA] (CpfFuncionario, NomeEmpresa, CnpjEmpresa, EnderEmpresa, TelefoneEmpresa)" +
                     "VALUES(@CpfFuncionario, @NomeEmpresa, @CnpjEmpresa, @EnderEmpresa, @TelefoneEmpresa)";
 

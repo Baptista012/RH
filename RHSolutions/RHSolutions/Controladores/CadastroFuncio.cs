@@ -19,12 +19,7 @@ namespace RHSolutions.Controladores
             {
                 conexaoDB.Open();
                 string InicioForma = _funcionarioData.Inicio.ToString("dd/MM/yyyy");
-                string FimForma = _funcionarioData.Fim.ToString("dd/MM/yyyy");
-                /*string query = "INSERT INTO[dbo].[FUNCIONARIO] (Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, " +
-                    "VAuxilioAlimentacao, VAuxilioRefeicao, Senha, Email, DataInicio, DataFim)" +
-                    $" VALUES('{_funcionarioData.CpfFunc}', '{_funcionarioData.NomeFunc}', '{_funcionarioData.TelefoneFunc}', '{_funcionarioData.CargoFunc}', '{_funcionarioData.SalarioFunc}', " +
-                    $"'{_funcionarioData.Funcional}', '{_funcionarioData.VAuxilioAlimentacao}', '{_funcionarioData.VAuxilioTransporte}', '{_funcionarioData.Senha}', '{_funcionarioData.Email}', " +
-                    $"'{InicioForma}', '{FimForma}' )";*/
+                string FimForma = _funcionarioData.Fim.ToString("dd/MM/yyyy");              
                 string query = "INSERT INTO[dbo].[FUNCIONARIO] (Cpf, Nome, TelefoneFunc, CargoFunc, SalarioFunc, Funcional, " +
                     "VAuxilioAlimentacao, VAuxilioRefeicao, Senha, Email, DataInicio, DataFim,ValeTransporte)" +
                     $" VALUES(@Cpf, @Nome, @TelefoneFunc, @CargoFunc, @SalarioFunc, @Funcional, " +
@@ -66,12 +61,12 @@ namespace RHSolutions.Controladores
                     End.Parameters.AddWithValue("@Cep", _funcionarioData.Cep);                   
                     if (End.ExecuteNonQuery() > 0)
                     {
-                        conexaoDB.Close();
+                        
                         return true;
                     }
                     else
                     {
-                        conexaoDB.Close();
+                        
                         return false;
                     }
                 }
@@ -82,10 +77,12 @@ namespace RHSolutions.Controladores
 
             }
             catch (Exception)
+            {                        
+                throw;
+            }
+            finally
             {
                 conexaoDB.Close();
-           
-                throw;
             }
 
         }
@@ -101,35 +98,25 @@ namespace RHSolutions.Controladores
                 
                 if ( Del.ExecuteNonQuery() >0)
                 {
-                    conexaoDB.Close();
+                    
                     return true;
                 }
                 else
                 {
-                    conexaoDB.Close();
+                   
                     return false;
                 }
 
-                /* string queryDEL = "DELETE FROM [dbo].[FUNCIONARIO] WHERE Cpf = @Cpf ";
-                 using (SqlCommand Del = new SqlCommand(queryDEL, conexaoDB))
-                 {
-                     Del.Parameters.AddWithValue("@Cpf", exfuncionarioData.CpfFunc);
-                     if (Del.ExecuteNonQuery() > 0)
-                     {
-                         conexaoDB.Close();
-                         return true;
-                     }
-                     else
-                     {
-                         conexaoDB.Close();
-                         return false;
-                     }
-                 }*/
+               
             }
             catch (Exception)
             {
-                conexaoDB.Close();
+                
                 throw;
+            }
+            finally
+            {
+                conexaoDB.Close();
             }
         }
     }

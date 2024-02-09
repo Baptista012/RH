@@ -36,17 +36,18 @@ namespace RHSolutions.Controladores
 
 
                         }
-                        conexaoDB.Close();
+                        
                     }
 
                 }
             }
             catch (Exception)
             {
-                conexaoDB.Close();
+               
                 throw;
 
             }
+            finally { conexaoDB.Close(); }
         }
 
         public double ResInss(FuncionarioData funcionarioPag)
